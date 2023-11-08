@@ -6,16 +6,10 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
-
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 
-
 const pages = ['Products', 'Schedule', 'About'];
-
 
 function TopMenu() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -31,8 +25,7 @@ function TopMenu() {
 
   return (
     <AppBar position="static" >
-      <Toolbar sx={{my: .5, p: 0, minHeight: '20px !important'}}>
-        {/* MMMMMMMMMMMM */}
+      <Toolbar sx={{my: .5, minHeight: '20px !important'}}>
         <Typography
           variant='h4'
           mt={1}
@@ -56,9 +49,7 @@ function TopMenu() {
             </Button>
           ))}
         </Box>
-        {/* MMMMMMMMMMMM */}
 
-        {/* SX SX SX SX */}
         <Typography
           variant="h6"
           noWrap
@@ -73,7 +64,9 @@ function TopMenu() {
         </Typography>
         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
           <IconButton
-            sx={{m: 0, p: 0, height:40}}
+            color={'primary.light'}
+            
+            sx={{color: 'primary.contrastText', height: 60}}
             size="large"
             onClick={handleOpenNavMenu}
           >
@@ -105,9 +98,6 @@ function TopMenu() {
             ))}
           </Menu>
         </Box>
-
-        {/* SX SX SX SX */}
-
       </Toolbar>
     </AppBar>
   );
