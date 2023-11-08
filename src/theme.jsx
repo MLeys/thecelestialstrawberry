@@ -61,7 +61,7 @@ const theme = createTheme({
       },
       styleOverrides: {
         root: {
-          //boxShadow: 'none', // Remove shadow for a flat mystical feel
+          // boxShadow: 'none', // Remove shadow for a flat mystical feel
         },
       },
     },

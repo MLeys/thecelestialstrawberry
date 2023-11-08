@@ -9,7 +9,7 @@ import Menu from '@mui/material/Menu';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 
-const pages = ['Products', 'Schedule', 'About'];
+const pages = ['Products', 'Readings', 'Laura'];
 
 function TopMenu() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -21,7 +21,6 @@ function TopMenu() {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
 
   return (
     <AppBar position="static" >
