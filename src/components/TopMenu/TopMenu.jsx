@@ -26,7 +26,7 @@ function TopMenu() {
     <AppBar position="static" >
       <Toolbar sx={{my: .5, minHeight: '20px !important'}}>
         <Typography
-          variant='h4'
+          variant="h4"
           mt={1}
           noWrap
           fontFamily={'fantasy'}
@@ -52,12 +52,10 @@ function TopMenu() {
         <Typography
           variant="h6"
           noWrap
-
           flexGrow={1}
           letterSpacing={'.1rem'}
           fontWeight={800}
           display={{ xs: 'flex', md: 'none' }}
-          text
         >
          Logo 
         </Typography>
