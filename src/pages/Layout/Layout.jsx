@@ -4,19 +4,20 @@ import { useEffect, useContext} from "react";
 import Box from "@mui/material/Box";
 
 import TopMenu from "../../components/TopMenu/TopMenu";
-
+import ResponsiveAppBar from "../../components/ResponsiveAppBar/ResponsiveAppBar";
 
 function Layout() {
-  const ctx = useContext(SkillsContext)
+
 
   useEffect(() => {
   }, []); 
 
   return (
-    <Box width={'100dvw'} minHeight={'100dvh'} bgcolor={'blueGrayLight.light'} >
-      <TopMenu >
+    <Box width={'100dvw'} minHeight={'100dvh'} bgcolor={'white'} >
+      <ResponsiveAppBar >
           <Outlet />
-      </TopMenu>
+          
+      </ResponsiveAppBar>
     </Box> 
   )
 }

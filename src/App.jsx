@@ -4,18 +4,22 @@ import { Route, Routes, useNavigate} from "react-router-dom";
 
 import IntroSection from './sections/IntroSection';
 import LandingPage from './pages/LandingPage/LandingPage';
-import IntroSection from './sections/IntroSection';
+import Layout from './pages/Layout/Layout';
 
 export default function App() {
   const navigate = useNavigate();
 
   return (
+    // <Routes>
+    //   <Route path="/" element={<Layout />} >
+    //     <Route index element={<LandingPage />} />
+    //   </Route>
+    // </Routes>
     <Routes>
-      <Route path="/" element={<IntroSection />} >
-
-        
-      </Route>
-    
-    </Routes>
+    <Route path="/" element={<Layout />}>
+      <Route index element={<LandingPage />} />
+    </Route>
+  </Routes>
   );
 };
+
