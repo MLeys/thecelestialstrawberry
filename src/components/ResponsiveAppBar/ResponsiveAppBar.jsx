@@ -28,7 +28,7 @@ function ResponsiveAppBar({ children }) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+      <Typography variant="h6" sx={{ my: 2, fontFamily: 'fantasy' }}>
         The Celestial Strawberry
       </Typography>
       <Divider />
@@ -62,17 +62,28 @@ function ResponsiveAppBar({ children }) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, letterSpacing: '.1rem', fontFamily: 'fantasy' }}
           >
             The Celestial Strawberry
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
+              <Button key={item} sx={{ color: '#fff', fontFamily: 'fantasy'  }}>
                 {item}
               </Button>
             ))}
           </Box>
+          <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
+          <Typography
+              variant="h6"
+              component="div"
+              sx={{ flexGrow: 1, color: 'white', justifyContent: 'flex-end', display: { xs: 'block', sm: 'none' }, letterSpacing: '.1rem', fontFamily: 'fantasy' }}
+            >
+              The Celestial Strawberry
+            </Typography>
+
+          </Box>
+
         </Toolbar>
       </AppBar>
       <nav>
