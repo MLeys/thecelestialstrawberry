@@ -103,7 +103,7 @@ function ResponsiveAppBar({ children }) {
         </Drawer>
       </nav>
       <Box component="main" sx={{ p: 3 }}>
-        <Toolbar />
+        
           {children}
       </Box>
     </Box>

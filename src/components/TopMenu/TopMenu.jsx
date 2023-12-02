@@ -1,9 +1,18 @@
 import React, { useState } from 'react';
-import { AppBar, Box, Toolbar, IconButton, Typography, Menu, Button, MenuItem, CssBaseline } from '@mui/material';
+
+import AppBar from '@mui/material/AppBar';
+import Grid from '@mui/material/Unstable_Grid2/Grid2';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import Menu from '@mui/material/Menu';
+import Button from '@mui/material/Button';
+import MenuItem from '@mui/material/MenuItem';
+import Toolbar from '@mui/material/Toolbar';
+
 
 const pages = ['Products', 'Readings', 'Laura'];
 
-function TopMenu({ children }) {
+export default function TopMenu({ children }) {
   const [anchorElNav, setAnchorElNav] = useState(null);
 
   const toggleNavMenu = (event) => {
@@ -16,7 +25,6 @@ function TopMenu({ children }) {
 
   return (
     <>
-      <CssBaseline />
       <AppBar position="fixed">
         <Toolbar>
           <Typography variant="h4" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, mt: 1, letterSpacing: '.1rem', fontWeight: 800, fontFamily: 'fantasy' }}>
@@ -44,12 +52,11 @@ function TopMenu({ children }) {
           </Menu>
         </Toolbar>
       </AppBar>
-      <Toolbar />
-      <Box component="main" sx={{ flexGrow: 1 }}>
+      
+      <Grid container component="main" sx={{ flexGrow: 1, marginTop: 50, pt: 50, p: 30}}>
+        <Toolbar />
         {children}
-      </Box>
+      </Grid>
     </>
   );
-}
-
-export default TopMenu;
+};

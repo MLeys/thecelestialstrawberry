@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import * as React from 'react';
 import { Route, Routes, useNavigate} from "react-router-dom";
 
@@ -11,10 +10,10 @@ export default function App() {
 
   return (
     <Routes>
-    <Route path="/" element={<Layout />}>
-      <Route index element={<LandingPage />} />
-    </Route>
-  </Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<LandingPage />} />
+      </Route>
+    </Routes>
   );
 };
 

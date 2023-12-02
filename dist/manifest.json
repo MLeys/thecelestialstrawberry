@@ -1,21 +1,14 @@
 {
-  "src/assets/react.svg": {
-    "file": "assets/react-35ef61ed.svg",
-    "src": "src/assets/react.svg"
-  },
   "src/main.css": {
-    "file": "assets/main-3fce1f81.css",
+    "file": "assets/main-8d88e2d5.css",
     "src": "src/main.css"
   },
   "src/main.jsx": {
-    "file": "assets/main-a6c4c06c.js",
+    "file": "assets/main-924cafd5.js",
     "src": "src/main.jsx",
     "isEntry": true,
     "css": [
-      "assets/main-3fce1f81.css"
-    ],
-    "assets": [
-      "assets/react-35ef61ed.svg"
+      "assets/main-8d88e2d5.css"
     ]
   }
 }

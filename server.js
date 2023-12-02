@@ -1,7 +1,7 @@
 
 import * as dotenv from 'dotenv' // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 dotenv.config()
-import 'dotenv/config.js'
+
 
 
 import express from 'express'
@@ -20,9 +20,9 @@ const app = express();
 
 app.set('view engine', 'ejs');
 
-
+// app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 // add in when the app is ready to be deployed
-app.use(favicon(path.join(__dirname, 'dist', 'vite.svg')));
+app.use(favicon(path.join(__dirname, 'dist', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(express.json()); // sets up our server to recieve JSON requests, this defines req.body for json requests
 

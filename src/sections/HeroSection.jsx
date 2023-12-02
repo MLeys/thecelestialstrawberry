@@ -14,9 +14,9 @@ export default function HeroSection() {
           right: 0,
           top: 0,
           bottom: 0,
-          backgroundColor: 'common.black',
+
           opacity: opacity, 
-          zIndex: 1,
+          zIndex: 92,
         }}
       />
     )
@@ -27,24 +27,15 @@ export default function HeroSection() {
   
 
   return (  
-    <Container
-      sx={{
-        position: 'relative',
-        minHeight: '80vh',
-      }} 
-    >
-      <FadeBackground opacity='0.5' />
+    <>
+
       <Box
         sx={{
           position: 'absolute',
-          left: 0,
-          right: 0,
-          top: 0,
-          bottom: 0,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
-          zIndex: 0,
-          margin: 0,
+       
+          
           backgroundImage: `url(${backgroundImage})`,
           backgroundColor: '#4d2e00', 
           backgroundPosition: 'center',
@@ -52,6 +43,6 @@ export default function HeroSection() {
       />
       
 
-    </Container>
+    </>
   );
 };
