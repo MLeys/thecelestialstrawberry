@@ -16,7 +16,7 @@ function LandingPage() {
       sx={{
         m: 0,
         p: 0,
-        zIndex: -1000
+        // zIndex: -1000,
         // backgroundImage: `url("https://i.imgur.com/gq3EMyS.png")`, // Corrected syntax
         // backgroundSize: '100dvw auto',
         // backgroundRepeat: 'repeat', // Optional: Prevent repeating the image
@@ -25,20 +25,11 @@ function LandingPage() {
 
       }}
     >
-      <h1>hello</h1>
       <HeroSection />
-      <Grid container xs={12}>
-        <Grid container xs={12}>
-        
-        </Grid>
-        <Grid container xs={12}>
-          <IntroSection />
-        </Grid>
-        fadsfasfa
-        <Grid container xs={12}>
-          <h6> next section</h6>
-        </Grid>
-      </Grid>
+
+      <IntroSection />
+
+
     </Box>
   );
 }
