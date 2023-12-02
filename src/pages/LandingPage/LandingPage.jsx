@@ -9,9 +9,22 @@ import Typography from '@mui/material/Typography';
 import HeroSection from "../../sections/HeroSection";
 import IntroSection from "../../sections/IntroSection";
 
+
 function LandingPage() {
   return (  
-    <Box>
+    <Box
+      sx={{
+        m: 0,
+        p: 0,
+        zIndex: -1000
+        // backgroundImage: `url("https://i.imgur.com/gq3EMyS.png")`, // Corrected syntax
+        // backgroundSize: '100dvw auto',
+        // backgroundRepeat: 'repeat', // Optional: Prevent repeating the image
+        // backgroundPosition: 'top', // Optional: Center the image
+        // opacity: 0.8
+
+      }}
+    >
       <h1>hello</h1>
       <HeroSection />
       <Grid container xs={12}>

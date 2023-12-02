@@ -13,12 +13,11 @@ function Layout() {
   }, []); 
 
   return (
-    <Box width={'100dvw'} minHeight={'100dvh'} bgcolor={'white'} >
+    <>
       <ResponsiveAppBar >
           <Outlet />
-          
       </ResponsiveAppBar>
-    </Box> 
+    </> 
   )
 }
 

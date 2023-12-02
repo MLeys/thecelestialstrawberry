@@ -10,11 +10,6 @@ export default function App() {
   const navigate = useNavigate();
 
   return (
-    // <Routes>
-    //   <Route path="/" element={<Layout />} >
-    //     <Route index element={<LandingPage />} />
-    //   </Route>
-    // </Routes>
     <Routes>
     <Route path="/" element={<Layout />}>
       <Route index element={<LandingPage />} />

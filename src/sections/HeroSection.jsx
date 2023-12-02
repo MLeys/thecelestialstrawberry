@@ -16,7 +16,7 @@ export default function HeroSection() {
           bottom: 0,
           backgroundColor: 'common.black',
           opacity: opacity, 
-          zIndex: -1,
+          zIndex: 1,
         }}
       />
     )
@@ -33,7 +33,7 @@ export default function HeroSection() {
         minHeight: '80vh',
       }} 
     >
-      <FadeBackground opacity='.5' />
+      <FadeBackground opacity='0.5' />
       <Box
         sx={{
           position: 'absolute',
@@ -43,7 +43,7 @@ export default function HeroSection() {
           bottom: 0,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
-          zIndex: -2,
+          zIndex: 0,
           margin: 0,
           backgroundImage: `url(${backgroundImage})`,
           backgroundColor: '#4d2e00', 
