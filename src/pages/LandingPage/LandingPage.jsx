@@ -21,7 +21,7 @@ function LandingPage() {
         id: 'bg',
         mt: 4,
         width: `calc(100dvw - ${scrollbarWidth}px)`, // Adjusted for scrollbar width
-        minHeight: '100dvh',
+        minHeight: '100%',
         overflowX: 'hidden',
         position: 'relative',
       }}
