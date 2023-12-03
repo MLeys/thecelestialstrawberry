@@ -9,14 +9,15 @@ import Typography from '@mui/material/Typography';
 
 export default function IntroSection() {
   return (
-    <Container
-      // sx={{
-      //   backgroundColor: theme.palette.primary.dark,
-      //   minHeight: '80vh',
-      //   alignContent: 'center',
-      //   verticalAlign: 'middle',
-      //   py: 5
-      // }} 
+    <Box
+      component={'section'}
+      sx={{
+        backgroundColor: theme.palette.primary.dark,
+        minHeight: '80vh',
+        alignContent: 'center',
+        verticalAlign: 'middle',
+        py: 5
+      }} 
     >
       <Typography variant='h6' color={'white'}>
         Astrology serves as a cosmic language, translating the celestial patterns into meaningful 
@@ -28,7 +29,7 @@ export default function IntroSection() {
         complex decisions.
       </Typography>
 
-    </Container>
+    </Box>
   );
 }
 

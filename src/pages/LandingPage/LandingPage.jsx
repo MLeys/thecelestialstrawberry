@@ -42,29 +42,27 @@ function LandingPage() {
   const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
 
   return (  
-    <Box
+    <Box component={'div'} sx={{ id: 'landing-page', my: { xs: 6, sm: 8, md: 10 }, bgcolor: theme.palette.primary.dark, }}>
+      <HeroSection />
+      <IntroSection />
       
-      sx={{
-        id: 'bg',
-        mt: 4,
-        width: '100%',
-        // width: `calc(100dvw - ${scrollbarWidth}px)`, // Adjusted for scrollbar width
-        minHeight: '100%',
-        overflowX: 'hidden',
-        position: 'relative',
-      }}
-    >
-      <Box
+    </Box>
+  );
+}
+
+export default LandingPage;
+
+// Dim background 
+      {/* <Box
         sx={{
-          position: 'absolute', // Absolute position to overlay on top of the parent Box
-          top: 0,
-          left: 0,
+          position: 'relative', // Absolute position to overlay on top of the parent Box
+          // top: 0,
+          // left: 0,
           width: '100%', // Full width of the parent Box
           minHeight: '100%', // Minimum height to cover the content
           zIndex: -1, // Places the overlay behind the main content
           // backgroundImage: 'url("https://i.imgur.com/9ILrB9k.png")',
           backgroundImage: `url(${backgrounds[4]})`, // Use template literals to insert the URL
-          // backgroundImage: `url(${images[10]})`,
           backgroundSize: '100% auto', // Maintain full width, adjust height automatically
           backgroundRepeat: 'repeat-y', // Repeat background image vertically
           // Apply a darkening effect using a pseudo-element
@@ -78,20 +76,4 @@ function LandingPage() {
             // zIndex: 'modal', // Ensure the overlay is behind all other content
           },
         }}
-      />
-      <Box 
-        sx={{
-          id: 'main-content',
-          position: 'relative',
-          zIndex: 1,
-        }} 
-      >
-        <HeroSection />
-        <IntroSection />
-      </Box>
-      
-    </Box>
-  );
-}
-
-export default LandingPage;
+      /> */}

@@ -1,3 +1,4 @@
+import React from "react";
 import { Outlet } from "react-router-dom";
 import { useEffect, useContext} from "react";
 
@@ -12,7 +13,7 @@ function Layout() {
   return (
     <>
       <ResponsiveAppBar >
-          <Outlet />
+        <Outlet />
       </ResponsiveAppBar>
     </> 
   )

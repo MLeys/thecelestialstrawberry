@@ -17,6 +17,7 @@ export default function HeroSection() {
 
   return (
     <Box
+      component={'section'}
       sx={{
         mb: 5,
         width: '100%',
