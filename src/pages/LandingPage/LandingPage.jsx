@@ -74,7 +74,7 @@ function LandingPage() {
             width: '100%',
             height: '100%',
             backgroundColor: 'rgba(0, 0, 0, 0.8)', // Dim the background with a semi-transparent overlay
-            zIndex: -1, // Ensure the overlay is behind all other content
+            // zIndex: 'modal', // Ensure the overlay is behind all other content
           },
         }}
       />
