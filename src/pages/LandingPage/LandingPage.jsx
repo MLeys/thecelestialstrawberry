@@ -12,32 +12,27 @@ const SpinningStrawberry = styled('img')({
 
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import CssBaseline from '@mui/material/CssBaseline';
-import HeroSection from "../../sections/HeroSection";
 import IntroSection from "../../sections/IntroSection";
-import { Toolbar } from "@mui/material";
 
 
 function LandingPage() {
+  const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
   return (  
     <Box
       sx={{
-        m: 0,
-        p: 0,
+        width: `calc(100dvw - ${scrollbarWidth}px)`, // Adjusted for scrollbar width
+        mx: 0,
+        px: 0,
+        mt: 4,
         zIndex: 0,
         backgroundImage: `url("https://i.imgur.com/9ILrB9k.png")`, // Corrected syntax
-        backgroundSize: '100dvw auto',
+        backgroundSize: '99dvw',
         backgroundRepeat: 'repeat', // Optional: Prevent repeating the image
         backgroundPosition: 'top', // Optional: Center the image
         opacity: 0.8,
         height: '150dvh'
       }}
     >
-     <Toolbar />
-      {/* <HeroSection /> */}
-      {/* <SpinningStrawberry src="public/Images/tcs_logo_06.png" alt="Spinning Strawberry" /> */}
       <IntroSection />
 
 

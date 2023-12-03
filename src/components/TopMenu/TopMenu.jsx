@@ -53,8 +53,17 @@ export default function TopMenu({ children }) {
         </Toolbar>
       </AppBar>
       
-      <Grid container component="main" sx={{ flexGrow: 1, marginTop: 50, pt: 50, p: 30}}>
-        <Toolbar />
+      <Grid container component="main" 
+        sx={{ 
+          width: '100dvw',
+          bgcolor: 'red',
+          flexGrow: 1, 
+          marginTop: 50, 
+          pt: 50, 
+          p: 30
+        }}
+      >
+       
         {children}
       </Grid>
     </>
