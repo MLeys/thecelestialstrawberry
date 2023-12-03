@@ -2,40 +2,64 @@ import React from "react";
 import theme from "../../theme";
 import { styled } from '@mui/material/styles';
 
-// Define the keyframes for the spinning animation
-const spin = '@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }';
-
-// Create a styled component for the strawberry with the spinning animation
-const SpinningStrawberry = styled('img')({
-  animation: `${spin} 2s infinite linear`,
-});
 
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import Box from '@mui/material/Box';
+
+import HeroSection from "../../sections/HeroSection";
 import IntroSection from "../../sections/IntroSection";
 
+const calendar = 'https://calendly.com/mleys';
 
 function LandingPage() {
   const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+
   return (  
     <Box
+      
       sx={{
-        width: `calc(100dvw - ${scrollbarWidth}px)`, // Adjusted for scrollbar width
-        mx: 0,
-        px: 0,
+        id: 'bg',
         mt: 4,
-        zIndex: 0,
-        backgroundImage: `url("https://i.imgur.com/9ILrB9k.png")`, // Corrected syntax
-        backgroundSize: '99dvw',
-        backgroundRepeat: 'repeat', // Optional: Prevent repeating the image
-        backgroundPosition: 'top', // Optional: Center the image
-        opacity: 0.8,
-        height: '150dvh'
+        width: `calc(100dvw - ${scrollbarWidth}px)`, // Adjusted for scrollbar width
+        minHeight: '100dvh',
+        overflowX: 'hidden',
+        position: 'relative',
       }}
     >
-      <IntroSection />
-
-
+      <Box
+        sx={{
+          position: 'absolute', // Absolute position to overlay on top of the parent Box
+          top: 0,
+          left: 0,
+          width: '100%', // Full width of the parent Box
+          minHeight: '100%', // Minimum height to cover the content
+          zIndex: -1, // Places the overlay behind the main content
+          backgroundImage: 'url("https://i.imgur.com/9ILrB9k.png")',
+          backgroundSize: '100% auto', // Maintain full width, adjust height automatically
+          backgroundRepeat: 'repeat-y', // Repeat background image vertically
+          // Apply a darkening effect using a pseudo-element
+          '&::before': {
+            content: '""',
+            display: 'block',
+            position: 'absolute',
+            width: '100%',
+            height: '100%',
+            backgroundColor: 'rgba(0, 0, 0, 0.8)', // Dim the background with a semi-transparent overlay
+            zIndex: -1, // Ensure the overlay is behind all other content
+          },
+        }}
+      />
+      <Box 
+        sx={{
+          id: 'main-content',
+          position: 'relative',
+          zIndex: 1,
+        }} 
+      >
+        <HeroSection />
+        <IntroSection />
+      </Box>
+      
     </Box>
   );
 }

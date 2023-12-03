@@ -18,7 +18,7 @@ export default function IntroSection() {
       //   py: 5
       // }} 
     >
-      <Typography variant='h6' color={'secondary.contrastText'}>
+      <Typography variant='h6' color={'white'}>
         Astrology serves as a cosmic language, translating the celestial patterns into meaningful 
         life guidance. It's believed to reveal our soul's blueprint for this life, aiding in 
         actualizing potential and overcoming challenges. It's a tool for empowerment, offering 

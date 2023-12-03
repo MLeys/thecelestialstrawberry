@@ -31,11 +31,13 @@ export default function HeroSection() {
 
       <Box
         sx={{
-          position: 'absolute',
+          mb: 5,
+          width: '100%',
+          height: '70dvh',
+          minHeight: '50dvh',
+          position: 'relative',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
-       
-          
           backgroundImage: `url(${backgroundImage})`,
           backgroundColor: '#4d2e00', 
           backgroundPosition: 'center',
