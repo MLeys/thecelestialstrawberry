@@ -3,6 +3,15 @@ import React from "react";
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 
+const heroImage = [
+  'https://imgur.com/lo5nT3S.png',
+  'https://imgur.com/8jpwN9M.png',
+  'https://imgur.com/jnxducr.png',
+  'https://imgur.com/uex9Nez.png',
+  'https://imgur.com/77F5TCF.png',
+  'https://imgur.com/georPnJ.png',
+  'https://imgur.com/448Bu3s.png',
+]
 
 export default function HeroSection() {
   function FadeBackground({opacity} ) {
@@ -34,11 +43,11 @@ export default function HeroSection() {
           mb: 5,
           width: '100%',
           height: '70dvh',
-          minHeight: '50dvh',
+          minHeight: '100%',
           position: 'relative',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
-          backgroundImage: `url(${backgroundImage})`,
+          backgroundImage: `url(${heroImage[5]})`,
           backgroundColor: '#4d2e00', 
           backgroundPosition: 'center',
         }}
