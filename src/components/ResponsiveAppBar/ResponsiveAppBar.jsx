@@ -44,6 +44,18 @@ function ResponsiveAppBar({ children }) {
     </Box>
   );
 
+  const menuItemFontSizes = {
+    fontSize: { xs: '1rem', md:'1.25rem' },
+  }
+
+  const appBarTitle = "The Celestial Strawberry";
+  const appBarTitleStyle = { 
+    flexGrow: 1, 
+    letterSpacing: '0.1rem', 
+    fontFamily: 'fantasy',
+    fontSize: { xs: '1.5rem', sm: '1.75rem', md: '2rem' },
+    py: { xs: 1, sm: 2, md: 2.5 }
+  };
 
   return (
     <Box sx={{ display: 'flex' }}>
@@ -59,50 +71,46 @@ function ResponsiveAppBar({ children }) {
           >
             =
           </IconButton>
+          {/* AppBar Title for mobile and desktop */}
           <Typography
-            variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, letterSpacing: '.1rem', fontFamily: 'fantasy' }}
-          >
-            The Celestial Strawberry
+            sx={{ ...appBarTitleStyle, display: { xs: 'flex', sm: 'none' }, justifyContent: 'center' }} >
+            {appBarTitle}
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff', fontFamily: 'fantasy'  }}>
+          <Typography
+            component="div"
+            sx={{ ...appBarTitleStyle, display: { xs: 'none', sm: 'flex' }, flexWrap: 'nowrap' }}
+          >
+            {appBarTitle}
+          </Typography>
+
+          <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
+            {navItems.map(item => (
+              <Button key={item} sx={{ color: '#fff', fontFamily: 'fantasy', ...menuItemFontSizes }}>
                 {item}
               </Button>
             ))}
           </Box>
-          <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
-          <Typography
-              variant="h6"
-              component="div"
-              sx={{ flexGrow: 1, color: 'white', justifyContent: 'flex-end', display: { xs: 'block', sm: 'none' }, letterSpacing: '.1rem', fontFamily: 'fantasy' }}
-            >
-              The Celestial Strawberry
-            </Typography>
-
-          </Box>
-
         </Toolbar>
       </AppBar>
-      <nav>
-        <Drawer
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-          sx={{
-            display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-          }}
-        >
-          {drawer}
-        </Drawer>
-      </nav>
-      <Box component="main" sx={{ p: 3 }}>
+
+      <Drawer
+        component={'nav'}
+        variant="temporary"
+        open={mobileOpen}
+        onClose={handleDrawerToggle}
+        ModalProps={{
+          keepMounted: true, // Better open performance on mobile.
+        }}
+        sx={{
+          display: { xs: 'block', sm: 'none' },
+          '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+        }}
+      >
+        {drawer}
+      </Drawer>
+  
+      <Box container component="main" sx={{ flexGrow: 1 }}>
         
           {children}
       </Box>
