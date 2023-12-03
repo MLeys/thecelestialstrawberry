@@ -8,6 +8,7 @@ import Box from '@mui/material/Box';
 
 import HeroSection from "../../sections/HeroSection";
 import IntroSection from "../../sections/IntroSection";
+import ProductsSection from "../../sections/ServicesSection";
 
 const calendar = 'https://calendly.com/mleys';
 
@@ -45,7 +46,7 @@ function LandingPage() {
     <Box component={'div'} sx={{ id: 'landing-page', my: { xs: 6, sm: 8, md: 10 }, bgcolor: theme.palette.primary.dark, }}>
       <HeroSection />
       <IntroSection />
-      
+      <ProductsSection />
     </Box>
   );
 }

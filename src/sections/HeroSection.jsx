@@ -17,6 +17,7 @@ export default function HeroSection() {
 
   return (
     <Box
+      id="hero-section"
       component={'section'}
       sx={{
         mb: 5,
