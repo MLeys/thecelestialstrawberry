@@ -25,6 +25,8 @@ export default function IntroSection() {
       component={'section'}
       sx={{
         p: 5,
+        display: 'flex',
+        flexDirection: 'column',
         minHeight: '50dvh',
         // backgroundImage: `url(${backgrounds[2]})`, // Use template literals to insert the URL
         backgroundPosition: 'center',
@@ -34,12 +36,13 @@ export default function IntroSection() {
         backgroundRepeat: 'no-repeat',
         alignContent: 'center',
         verticalAlign: 'middle',
+        justifyContent: 'center',
       }} 
     >
 
 
-      <Typography variant="h1"  sx={{ display: 'flex', justifyContent: 'center'}}>-</Typography>
-      <Typography variant='body1' color={'primary.dark'} sx={{ px: {xs: 2, }}}>
+      <Typography variant="h1"  sx={{ display: 'flex', justifyContent: 'center', m: 'auto'}}>-</Typography>
+      <Typography variant='body1' fontSize={'1.25rem'} color={'primary.dark'} sx={{ px: {xs: 2, }}}>
         Astrology serves as a cosmic language, translating the celestial patterns into <b>meaningful life guidance</b>. 
  
         <br/><br/>
@@ -48,7 +51,7 @@ export default function IntroSection() {
         to <u>self-understanding</u> and <u>healing</u>.
 
       </Typography>
-      <Typography variant="h1"  sx={{ display: 'flex', justifyContent: 'center'}}>-</Typography>
+      <Typography variant="h1"  sx={{ display: 'flex', justifyContent: 'center', m: 'auto'}}>-</Typography>
       {/*
       As a conduit to this ancient knowledge, 
       
