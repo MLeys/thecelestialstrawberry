@@ -45,8 +45,7 @@ function LandingPage() {
   const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
 
   return (  
-    <Box component={'div'} sx={{ id: 'landing-page', my: { xs: 6, sm: 8, md: 10 },
-     bgcolor: theme.palette.hero.dark, }}>
+    <Box id="landing-page" component={'div'} height={'100%'} width={'100%'} sx={{ my: { xs: 6, sm: 8, md: 10 } }}>
       <HeroSection />
       <IntroSection />
       <ProductsSection />
@@ -59,16 +58,16 @@ export default LandingPage;
 // Dim background 
       {/* <Box
         sx={{
-          position: 'relative', // Absolute position to overlay on top of the parent Box
+          position: 'absolute', 
           // top: 0,
           // left: 0,
-          width: '100%', // Full width of the parent Box
-          minHeight: '100%', // Minimum height to cover the content
-          zIndex: -1, // Places the overlay behind the main content
+          width: '100%',
+          minHeight: '100%', 
+          zIndex: -1, /
           // backgroundImage: 'url("https://i.imgur.com/9ILrB9k.png")',
-          backgroundImage: `url(${backgrounds[4]})`, // Use template literals to insert the URL
-          backgroundSize: '100% auto', // Maintain full width, adjust height automatically
-          backgroundRepeat: 'repeat-y', // Repeat background image vertically
+          backgroundImage: `url(${backgrounds[4]})`, 
+          backgroundSize: '100% auto', 
+          backgroundRepeat: 'repeat-y',
           // Apply a darkening effect using a pseudo-element
           '&::before': {
             content: '""',
@@ -76,8 +75,8 @@ export default LandingPage;
             position: 'absolute',
             width: '100%',
             height: '100%',
-            backgroundColor: 'rgba(0, 0, 0, 0.8)', // Dim the background with a semi-transparent overlay
-            // zIndex: 'modal', // Ensure the overlay is behind all other content
+            backgroundColor: 'rgba(0, 0, 0, 0.8)', 
+            // zIndex: 'modal', 
           },
         }}
       /> */}

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import theme from '../../theme';
+import { useNavigate } from 'react-router-dom';
 
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -9,16 +10,18 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 
-export default function ServiceCard({title, description, image, index}) {
+
+
+export default function ServiceCard({title, description, image, calendly }) {
   return ( 
-    <Card key={`serviceCard-${index}`} sx={{maxWidth: 200 }}>
+    <Card elevation={6} px={0} sx={{ maxWidth: 200 ,maxHeight: 400 }}>
       <CardActionArea>
         <CardMedia
           component={'img'}
           height={140}
           
-          image="https://i.imgur.com/MwRSncW.png"
-          alt={`${title}`}
+          image={image}
+          alt={title}
         />
         <CardContent>
           <Typography gutterBottom variant='h5' component={'div'}>
@@ -30,7 +33,7 @@ export default function ServiceCard({title, description, image, index}) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button size="small" color="primary" href={calendly}>
           Book Now!
         </Button>
       </CardActions>

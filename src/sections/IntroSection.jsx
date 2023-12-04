@@ -27,8 +27,8 @@ export default function IntroSection() {
         p: 5,
         display: 'flex',
         flexDirection: 'column',
-        minHeight: '50dvh',
-        // backgroundImage: `url(${backgrounds[2]})`, // Use template literals to insert the URL
+        // minHeight: '50dvh',
+        // backgroundImage: `url(${backgrounds[2]})`, 
         backgroundPosition: 'center',
         // width: '100%',
         backgroundColor: theme.palette.hero.light,
@@ -43,13 +43,11 @@ export default function IntroSection() {
 
       <Typography variant="h1"  sx={{ display: 'flex', justifyContent: 'center', m: 'auto'}}>-</Typography>
       <Typography variant='body1' fontSize={'1.25rem'} color={'primary.dark'} sx={{ px: {xs: 2, }}}>
-        Astrology serves as a cosmic language, translating the celestial patterns into <b>meaningful life guidance</b>. 
- 
+        Astrology serves as a cosmic language, translating the celestial patterns 
+        into <b>meaningful life guidance</b>. 
         <br/><br/>
-        
         <b>Hellenistic Astrology</b> and <b>Tarot readings</b> stand as gateways 
         to <u>self-understanding</u> and <u>healing</u>.
-
       </Typography>
       <Typography variant="h1"  sx={{ display: 'flex', justifyContent: 'center', m: 'auto'}}>-</Typography>
       {/*
