@@ -52,3 +52,29 @@
 3. **Emotional Support:** Offers comfort and support during challenging times.
 4. **Intuitive Insights:** Encourages listening to one’s inner wisdom and intuition.
 5. **Daily Inspiration:** Serves as a source of daily guidance and positive affirmation.
+
+
+
+### Symbols Inspired by Astrology, Mysticism, and the Cosmos
+
+1. **Cosmos Star Symbol**:
+   - A star with multiple points, each point elongated and tapering to give a sense of radiant energy.
+   - Edges can be softened to appear glowing, with a gradient from white at the center to a cosmic blue at the tips, symbolizing the vastness of the cosmos.
+
+2. **Planetary Orbits Symbol**:
+   - Abstract circles intersecting or orbiting around a central point, representing planetary movements.
+   - Using thin lines for the orbits with small dots or larger circles for planets can symbolize the celestial dance of the solar system.
+
+3. **Zodiac Wheel Symbol**:
+   - A circle segmented into traditional zodiac signs with their respective symbols subtly inscribed in each segment.
+   - The wheel can be bordered by a ring of constellations or stars to tie it back to the celestial theme.
+
+4. **Tarot Mystic Symbol**:
+   - Iconic tarot elements like the sun, moon, and stars integrated into a card-shaped outline.
+   - Adding esoteric symbols such as the eye, crescent moons, or infinity loops can give it a deeper mystic feel.
+
+5. **Natural Healing Symbol**:
+   - A symbol combining elements of nature such as a leaf, a drop of water, and a healing crystal.
+   - Each element could be overlaid or interconnected, showing the harmony and balance of natural healing practices.
+
+These symbols should be designed with clean lines and easily distinguishable features to maintain their clarity when used as text clouds. The color palette should indeed be inspired by cosmic imagery, with dark blues and purples providing depth and contrasted by bright whites and yellows to ensure legibility and impact. 
