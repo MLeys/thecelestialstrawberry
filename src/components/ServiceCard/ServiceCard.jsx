@@ -14,12 +14,11 @@ import CardActionArea from '@mui/material/CardActionArea';
 
 export default function ServiceCard({title, description, image, calendly }) {
   return ( 
-    <Card elevation={6} px={0} sx={{ maxWidth: 200 ,maxHeight: 400 }}>
+    <Card elevation={6} px={0} sx={{ maxHeight: 400, flexGrow: 1 }}>
       <CardActionArea>
         <CardMedia
           component={'img'}
           height={140}
-          
           image={image}
           alt={title}
         />
@@ -28,7 +27,7 @@ export default function ServiceCard({title, description, image, calendly }) {
             {title}
           </Typography>
           <Typography variant='body2' color={'heroPurple.dark'}>
-            Tarot readings are what they are and it they were not, they woould be something different
+            {description}
           </Typography>
         </CardContent>
       </CardActionArea>

@@ -1,8 +1,9 @@
-import * as React from 'react';
+import React from 'react';
 import theme from '../theme';
 import practicesInfo from '../assets/servicesInformation';
 
 import Box from '@mui/material/Box';
+import Grid from '@mui/material/Unstable_Grid2';
 
 import ServiceCard from '../components/ServiceCard/ServiceCard';
 
@@ -29,14 +30,16 @@ const hello = [...practicesInfo]
   const aspectRatio = 56.25; // padding-top hack
       
   return (
-    <Box
+    <Grid
       id='services-section'
       component={'section'}
+      container
       sx={{
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         flexWrap: 'no-wrap',
+        flexGrow: 1,
         maxHeight: '100%',
         maxWidth: '100%', 
         gap: 2,
@@ -49,15 +52,16 @@ const hello = [...practicesInfo]
       }}
     >
       {services.map((service, index) => (
-        <ServiceCard
-          key={`serviceCard-${index}`}
-          index={index}
-          title={service.title}
-          description={service.description}
-          image={service.image}
-          calendly={service.calendly}
-        />
+        <Grid key={`serviceCard-${index}`} xs={11} sm={5} md={3}>
+          <ServiceCard
+            index={index}
+            title={service.title}
+            description={service.description}
+            image={service.image}
+            calendly={service.calendly}
+          />
+        </Grid>
       ))}
-    </Box>
+    </Grid>
   );
 };
