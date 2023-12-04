@@ -25,6 +25,7 @@ export default function IntroSection() {
       component={'section'}
       sx={{
         p: 5,
+        minHeight: '50dvh',
         // backgroundImage: `url(${backgrounds[2]})`, // Use template literals to insert the URL
         backgroundPosition: 'center',
         // width: '100%',
@@ -37,17 +38,26 @@ export default function IntroSection() {
     >
 
 
-      <Typography variant="h1" p={3} >-</Typography>
-      <Typography variant='body1' color={'primary.dark'}>
-        Astrology serves as a cosmic language, translating the celestial patterns into meaningful 
-        life guidance. It's believed to reveal our soul's blueprint for this life, aiding in 
-        actualizing potential and overcoming challenges. It's a tool for empowerment, offering 
-        insights that inform choices and help sculpt the future. As a conduit to this ancient 
-        knowledge, Hellenistic Astrology and Tarot readings stand as gateways to self-understanding 
-        and healing, providing a reflective mirror for personal evolution and clarity in life's 
-        complex decisions.
-      </Typography>
+      <Typography variant="h1"  sx={{ display: 'flex', justifyContent: 'center'}}>-</Typography>
+      <Typography variant='body1' color={'primary.dark'} sx={{ px: {xs: 2, }}}>
+        Astrology serves as a cosmic language, translating the celestial patterns into <b>meaningful life guidance</b>. 
+ 
+        <br/><br/>
+        
+        <b>Hellenistic Astrology</b> and <b>Tarot readings</b> stand as gateways 
+        to <u>self-understanding</u> and <u>healing</u>.
 
+      </Typography>
+      <Typography variant="h1"  sx={{ display: 'flex', justifyContent: 'center'}}>-</Typography>
+      {/*
+      As a conduit to this ancient knowledge, 
+      
+      It's believed to reveal our soul's blueprint for this life, aiding in actualizing potential and overcoming challenges. 
+      It's a tool for empowerment, offering insights that inform choices and help sculpt the future. 
+              providing a reflective mirror for personal evolution and clarity in life's 
+        complex decisions.
+      
+      */}
     </Box>
   );
 }

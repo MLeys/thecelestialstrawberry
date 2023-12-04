@@ -20,6 +20,7 @@ export default function HeroSection() {
       id="hero-section"
       component={'section'}
       sx={{
+        minHeight: '50dvh',
         width: '100%',
         paddingTop: `${aspectRatio}%`, // This creates the aspect ratio
         position: 'relative',
