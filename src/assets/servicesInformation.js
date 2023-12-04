@@ -63,7 +63,7 @@ const practicesInfo = [
       { name: 'Emotional Clarity', description: 'Clarifies emotional responses and personal relationships.' }
     ]
   },{
-    title: 'birthChartReadings',
+    title: 'Birth Chart Readings',
     image: '',
     calendly: '',
     symbol: '',
