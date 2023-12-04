@@ -110,7 +110,7 @@ function ResponsiveAppBar({ children }) {
         {drawer}
       </Drawer>
   
-      <Box container component="main" sx={{ flexGrow: 1 }}>
+      <Box component="main" sx={{ flexGrow: 1 }}>
         {children}
       </Box>
     </Box>

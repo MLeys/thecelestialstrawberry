@@ -25,16 +25,19 @@ export default function IntroSection() {
       component={'section'}
       sx={{
         p: 5,
-        backgroundImage: `url(${backgrounds[2]})`, // Use template literals to insert the URL
+        // backgroundImage: `url(${backgrounds[2]})`, // Use template literals to insert the URL
         backgroundPosition: 'center',
         // width: '100%',
-        backgroundColor: theme.palette.primary.light,
+        backgroundColor: theme.palette.hero.light,
         backgroundSize: '100% cover',
         backgroundRepeat: 'no-repeat',
         alignContent: 'center',
         verticalAlign: 'middle',
       }} 
     >
+
+
+      <Typography variant="h1" p={3} >-</Typography>
       <Typography variant='body1' color={'primary.dark'}>
         Astrology serves as a cosmic language, translating the celestial patterns into meaningful 
         life guidance. It's believed to reveal our soul's blueprint for this life, aiding in 

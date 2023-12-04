@@ -39,6 +39,18 @@ const customPalette = {
     dark: '#1b5e20', // Deep forest green, where the earth's energy gathers
     contrastText: '#ffffff', // To stand out on success color
   },
+  hero: {
+    light: '#fefcfd', // #e1fdfe #fefcfd
+    main: 'rgba(0, 11, 27, 1)', //#000d1b 
+    dark: '#130025', // #000d1c #040132 #130025
+    contrastText: '#ffffff',
+  },
+  heroPurple: {
+    light: '#a6aff1', 
+    main: '#ae8bf5', 
+    dark: '#040132', 
+    contrastText: '#ffffff',
+  },
   contrastThreshold: 3,
   tonalOffset: 0.2,
 };

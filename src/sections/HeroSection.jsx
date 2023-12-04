@@ -20,14 +20,12 @@ export default function HeroSection() {
       id="hero-section"
       component={'section'}
       sx={{
-        mb: 5,
         width: '100%',
         paddingTop: `${aspectRatio}%`, // This creates the aspect ratio
         position: 'relative',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        backgroundImage: `url(${heroImage[5]})`,
-        backgroundColor: '#4d2e00', 
+        backgroundImage: `url(${heroImage[1]})`,
         backgroundPosition: 'center',
       }}
     />

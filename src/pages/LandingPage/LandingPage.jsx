@@ -11,6 +11,8 @@ import IntroSection from "../../sections/IntroSection";
 import ProductsSection from "../../sections/ServicesSection";
 
 const calendar = 'https://calendly.com/mleys';
+const bgColorCode = '#000d1b'
+
 
 const backgrounds = [
   'https://imgur.com/georPnJ.png',
@@ -43,7 +45,8 @@ function LandingPage() {
   const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
 
   return (  
-    <Box component={'div'} sx={{ id: 'landing-page', my: { xs: 6, sm: 8, md: 10 }, bgcolor: theme.palette.primary.dark, }}>
+    <Box component={'div'} sx={{ id: 'landing-page', my: { xs: 6, sm: 8, md: 10 },
+     bgcolor: theme.palette.hero.dark, }}>
       <HeroSection />
       <IntroSection />
       <ProductsSection />
