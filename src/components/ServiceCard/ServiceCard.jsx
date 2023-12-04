@@ -33,7 +33,7 @@ export default function ServiceCard({title, description, image, calendly }) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary" href={calendly}>
+        <Button size="small" color="primary" href={calendly} target='_blank'>
           Book Now!
         </Button>
       </CardActions>
