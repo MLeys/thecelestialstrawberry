@@ -26,22 +26,38 @@ const hello = [...practicesInfo]
     'https://imgur.com/XRSxlCz.png'
   ];
 
-
-    return (
-        <Box sx={{ display: 'flex', justifyContent: 'center', alignContent: 'center',flexWrap: 'wrap', gap: 2, p: 5, 
-        width: '100%',
-        
-        // backgroundColor: 'heroPurple.main',
-        backgroundImage: `url(${backgrounds[2]})`, 
-        backgroundSize: 'auto 100%', 
-        backgroundRepeat: 'repeat', 
+  const aspectRatio = 56.25; // padding-top hack
+      
+  return (
+    <Box
+      id='services-section'
+      component={'section'}
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexWrap: 'no-wrap',
+        maxHeight: '100%',
+        maxWidth: '100%', 
+        gap: 2,
+        margin: '0 auto',
+        padding: 2, 
+        position: 'relative',
+        backgroundSize: 'cover',
+        backgroundImage: `url(${backgrounds[2]})`,
         backgroundPosition: 'center',
-        }}>
-          
-            {services.map((service, index) => (
-              <ServiceCard key={`serviceCard-${index}`} index={index} title={service.title} description={service.description} image={service.image} calendly={service.calendly} />
-
-            ))}
-        </Box>
-    );
+      }}
+    >
+      {services.map((service, index) => (
+        <ServiceCard
+          key={`serviceCard-${index}`}
+          index={index}
+          title={service.title}
+          description={service.description}
+          image={service.image}
+          calendly={service.calendly}
+        />
+      ))}
+    </Box>
+  );
 };
