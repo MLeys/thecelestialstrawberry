@@ -9,21 +9,22 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 
-export default function ServiceCard({title, description, image}) {
+export default function ServiceCard({title, description, image, index}) {
   return ( 
-    <Card sx={{maxWidth: 200 }}>
+    <Card key={`serviceCard-${index}`} sx={{maxWidth: 200 }}>
       <CardActionArea>
         <CardMedia
           component={'img'}
           height={140}
-          image='url("https://i.imgur.com/MwRSncW.png")'
+          
+          image="https://i.imgur.com/MwRSncW.png"
           alt={`${title}`}
         />
         <CardContent>
           <Typography gutterBottom variant='h5' component={'div'}>
             {title}
           </Typography>
-          <Typography variant='body2' color={heroPurple.dark}>
+          <Typography variant='body2' color={'heroPurple.dark'}>
             Tarot readings are what they are and it they were not, they woould be something different
           </Typography>
         </CardContent>
