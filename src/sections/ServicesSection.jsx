@@ -52,7 +52,7 @@ const hello = [...practicesInfo]
       }}
     >
       {services.map((service, index) => (
-        <Grid key={`serviceCard-${index}`} xs={11} sm={5} md={3}>
+        <Grid key={crypto.randomUUID()} xs={11} sm={5} md={3}>
           <ServiceCard
             index={index}
             title={service.title}
