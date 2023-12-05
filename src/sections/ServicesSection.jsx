@@ -37,7 +37,8 @@ export default function ServicesSection() {
         maxWidth: '100%', 
         gap: 2,
         margin: '0 auto',
-        padding: 2, 
+        paddingY: 9,
+        paddingX: 2,
         position: 'relative',
         backgroundSize: 'cover',
         backgroundImage: `url(${backgrounds[2]})`,
@@ -46,13 +47,7 @@ export default function ServicesSection() {
     >
       {servicesInfo.map((service, index) => (
         <Grid key={crypto.randomUUID()} xs={11} sm={5} md={3}>
-          <ServiceCard
-            index={index}
-            title={service.title}
-            description={service.description}
-            image={service.image}
-            calendly={service.calendly}
-          />
+          <ServiceCard index={index} service={service}/>
         </Grid>
       ))}
     </Grid>
