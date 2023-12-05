@@ -17,9 +17,13 @@ export default function ServicesSection() {
   function  handleServiceClick(service) {
     setActiveService(service);
     const element = serviceDetailsRef.current;
+
+    // if (serviceDetailsRef.current) {
+    //   serviceDetailsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // }
   
     if (element) {
-      const offset = 8; // Height of the fixed header or any other offset
+      const offset = 80; // Height of the fixed header or any other offset
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = element.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;
@@ -67,7 +71,7 @@ export default function ServicesSection() {
       <Grid>
       </Grid>
     </Grid>
-    <Box ref={serviceDetailsRef}>
+    <Box ref={serviceDetailsRef} mb={500}>
       <ServiceDetails service={activeService} />
       
     </Box>
