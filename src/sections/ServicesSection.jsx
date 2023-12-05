@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+
 import theme from '../theme';
 import servicesInfo from '../assets/servicesInformation';
 
@@ -9,20 +10,27 @@ import ServiceDetails from '../components/ServiceDetails/ServiceDetails';
 import ServiceCard from '../components/ServiceCard/ServiceCard';
 
 export default function ServicesSection() {
-  const [activeService, setActiveService] = useState(servicesInfo[0]); // Default to first service
+  const [activeService, setActiveService] = useState(servicesInfo[0]); 
+  const serviceDetailsRef = useRef(null);
+
 
   function  handleServiceClick(service) {
     setActiveService(service);
+    const element = serviceDetailsRef.current;
+  
+    if (element) {
+      const offset = 8; // Height of the fixed header or any other offset
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = element.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+  
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
   };
-
-  const backgrounds = [
-    'https://imgur.com/georPnJ.png',
-    'https://imgur.com/r2xMkjr.png',
-    'https://imgur.com/Y60JE8H.png',
-    'https://imgur.com/RBVZgs1.png',
-    'https://imgur.com/xrN5Txk.png',
-    'https://imgur.com/XRSxlCz.png'
-  ];
 
   const aspectRatio = 56.25; // padding-top hack
 
@@ -59,7 +67,7 @@ export default function ServicesSection() {
       <Grid>
       </Grid>
     </Grid>
-    <Box>
+    <Box ref={serviceDetailsRef}>
       <ServiceDetails service={activeService} />
       
     </Box>
