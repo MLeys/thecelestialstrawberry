@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import theme from '../theme';
 import servicesInfo from '../assets/servicesInformation';
 
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
 
+import ServiceDetails from '../components/ServiceDetails/ServiceDetails';
 import ServiceCard from '../components/ServiceCard/ServiceCard';
 
 export default function ServicesSection() {
-  
+  const [activeService, setActiveService] = useState(servicesInfo[0]); // Default to first service
+
+  function  handleServiceClick(service) {
+    setActiveService(service);
+  };
 
   const backgrounds = [
     'https://imgur.com/georPnJ.png',
@@ -23,6 +28,7 @@ export default function ServicesSection() {
 
       
   return (
+    <>
     <Grid
       id='services-section'
       component={'section'}
@@ -41,15 +47,23 @@ export default function ServicesSection() {
         paddingX: 2,
         position: 'relative',
         backgroundSize: 'cover',
-        backgroundImage: `url(${backgrounds[2]})`,
+        backgroundImage: `url(${'https://imgur.com/Y60JE8H.png'})`,
         backgroundPosition: 'center',
       }}
     >
       {servicesInfo.map((service, index) => (
-        <Grid key={crypto.randomUUID()} xs={11} sm={5} md={3}>
-          <ServiceCard index={index} service={service}/>
+        <Grid key={crypto.randomUUID()} xs={11} sm={5} md={3} >
+          <ServiceCard  index={index} service={service}  onClick={(i,e) => handleServiceClick(service)} />
         </Grid>
       ))}
+      <Grid>
+      </Grid>
     </Grid>
+    <Box>
+      <ServiceDetails service={activeService} />
+      
+    </Box>
+    </>
+
   );
 };

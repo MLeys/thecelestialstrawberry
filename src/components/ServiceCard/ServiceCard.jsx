@@ -31,7 +31,7 @@ const StyledCardActionArea = styled(CardActionArea)(({ theme }) => ({
 }));
 
 
-export default function ServiceCard({index, service }) {
+export default function ServiceCard({index, service, onClick }) {
   const title = service.title;
   const image = service.image;
   const calendly = service.calendly;
@@ -43,7 +43,7 @@ export default function ServiceCard({index, service }) {
   
   return ( 
     <Card elevation={6} sx={{ maxWidth: 400, position: 'relative' }}> 
-      <StyledCardActionArea>
+      <StyledCardActionArea  onClick={() => onClick(service)}>
         <CardMedia
           component="img"
           sx={{
