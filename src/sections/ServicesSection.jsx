@@ -1,6 +1,6 @@
 import React from 'react';
 import theme from '../theme';
-import practicesInfo from '../assets/servicesInformation';
+import servicesInfo from '../assets/servicesInformation';
 
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
@@ -8,14 +8,6 @@ import Grid from '@mui/material/Unstable_Grid2';
 import ServiceCard from '../components/ServiceCard/ServiceCard';
 
 export default function ServicesSection() {
-
-  const services = [
-    { title: 'Tarot Reading', description: 'Description 1', image: 'https://i.imgur.com/MwRSncW.png', calendly: 'https://calendly.com/mleys/service-1' }, 
-    { title: 'Birth Card Reading', description: 'Description 2', image: 'https://i.imgur.com/gRh80fX.png', calendly: 'https://calendly.com/mleys/service-2' },
-    { title: 'Third Thing', description: 'Description 2', image: 'https://i.imgur.com/an9PuYi.png', calendly: 'https://calendly.com/mleys/service-2' },
-
-  ];
-const hello = [...practicesInfo]
   
 
   const backgrounds = [
@@ -28,6 +20,7 @@ const hello = [...practicesInfo]
   ];
 
   const aspectRatio = 56.25; // padding-top hack
+
       
   return (
     <Grid
@@ -51,7 +44,7 @@ const hello = [...practicesInfo]
         backgroundPosition: 'center',
       }}
     >
-      {services.map((service, index) => (
+      {servicesInfo.map((service, index) => (
         <Grid key={crypto.randomUUID()} xs={11} sm={5} md={3}>
           <ServiceCard
             index={index}

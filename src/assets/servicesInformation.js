@@ -30,28 +30,29 @@ const oracleReadingBenefits = [
   { name: 'Daily Inspiration', description: 'Serves as a source of daily guidance and positive affirmation.' }
 ];
 
+const astrologyInfo =    {
+  title: 'Hellenistic Astrology',
+  image: '',
+  calendly: '',
+  symbol: '',
+  summary: 'Ancient astrology combining Babylonian, Egyptian, and Greek traditions, focusing on character and destiny through celestial influences.',
+  overview: 'Hellenistic astrology emerged in the Mediterranean around the 1st century BCE, combining astrological traditions of Babylon, Egypt, and Greece. It is foundational for many modern practices and includes techniques like aspects, planetary periods, and uses the seven traditional planets.',
+  purpose: 'Its purpose is to gain insight into an individual\'s character and destiny, influenced by celestial bodies. It provides guidance for personal growth, understanding life events, and future decision-making.',
+  benefits: [
+    { name: 'Personal Insight', description: 'Reveals deep insights into character and personality traits.' },
+    { name: 'Fate Understanding', description: 'Helps in understanding the influence of celestial bodies on one\'s destiny.' },
+    { name: 'Life Guidance', description: 'Offers guidance for personal growth and decision-making.' },
+    { name: 'Predictive Analysis', description: 'Provides forecasts about future trends and life events.' },
+    { name: 'Historical Depth', description: 'Connects individuals to ancient wisdom and astrological traditions.' }
+  ]
+};
 
-const practicesInfo = [
-   {
-    title: 'Hellenistic Astrology',
-    image: '',
-    calendly: '',
-    symbol: '',
-    summary: 'Ancient astrology combining Babylonian, Egyptian, and Greek traditions, focusing on character and destiny through celestial influences.',
-    overview: 'Hellenistic astrology emerged in the Mediterranean around the 1st century BCE, combining astrological traditions of Babylon, Egypt, and Greece. It is foundational for many modern practices and includes techniques like aspects, planetary periods, and uses the seven traditional planets.',
-    purpose: 'Its purpose is to gain insight into an individual\'s character and destiny, influenced by celestial bodies. It provides guidance for personal growth, understanding life events, and future decision-making.',
-    benefits: [
-      { name: 'Personal Insight', description: 'Reveals deep insights into character and personality traits.' },
-      { name: 'Fate Understanding', description: 'Helps in understanding the influence of celestial bodies on one\'s destiny.' },
-      { name: 'Life Guidance', description: 'Offers guidance for personal growth and decision-making.' },
-      { name: 'Predictive Analysis', description: 'Provides forecasts about future trends and life events.' },
-      { name: 'Historical Depth', description: 'Connects individuals to ancient wisdom and astrological traditions.' }
-    ]
-  },{
+const servicesInfo = [
+  {
     title: 'Tarot Readings',
-    image: '',
-    calendly: '',
-    symbol: '',
+    image: 'dist/Images/symbols/tarotReading_07.png',
+    calendly: 'https://calendly.com/mleys/service-1',
+    symbol: 'dist/Images/symbols/tarotMystic_03_edit.png',
     summary: 'Divination using a deck of 78 cards, offering insight into life situations, personal growth, and decision-making.',
     overview: 'Tarot readings use a deck of 78 cards for divination, originating in mid-15th century Europe. Initially a card game, it evolved into a divination tool in the 18th century. The deck is divided into Major and Minor Arcana, each with unique imagery and symbolism.',
     purpose: 'Tarot readings provide personal guidance, self-reflection, and decision-making support. They offer clarity on life situations, helping understand underlying patterns, challenges, and opportunities.',
@@ -64,9 +65,9 @@ const practicesInfo = [
     ]
   },{
     title: 'Birth Chart Readings',
-    image: '',
-    calendly: '',
-    symbol: '',
+    image: 'dist/Images/symbols/brithChartReading_03_edit.png',
+    calendly: 'https://calendly.com/mleys/service-2',
+    symbol: 'dist/Images/symbols/brithChartReading_01_edit.png',
     summary: 'Astrological analysis based on the planetary positions at one\'s birth, providing deep personal insights and life path guidance.',
     overview: 'Birth chart readings analyze an astrological chart for the exact time, date, and location of someone\'s birth. This practice maps planetary positions and astrological houses, offering a unique insight into personality and life journey.',
     purpose: 'The readings provide detailed insights into character, strengths, weaknesses, and potential life path. They aid in self-discovery, understanding personal dynamics, and making life decisions.',
@@ -79,9 +80,9 @@ const practicesInfo = [
     ]
   },{
     title: 'Oracle Readings', 
-    image: '',
-    calendly: '',
-    symbol: '',
+    image: 'dist/Images/symbols/oracleReading_09.png',
+    calendly: 'https://calendly.com/mleys/service-1',
+    symbol: 'dist/Images/symbols/naturalHealing_02_edit2.png',
     summary: 'Spiritual guidance using unique oracle cards, each carrying specific uplifting messages and insights for personal enlightenment.',
     overview: 'Oracle readings use unique oracle cards for divination, differing from tarot cards. Modern oracle cards, popularized in the late 20th century, vary in theme and number, each carrying specific messages or insights.',
     purpose: 'Oracle readings offer spiritual guidance, self-reflection, and decision-making support. They provide direct and uplifting messages, offering comfort, motivation, and a deeper understanding of personal and spiritual matters.',
@@ -95,4 +96,4 @@ const practicesInfo = [
   }
 ];
 
-export default practicesInfo;
+export default servicesInfo ;
