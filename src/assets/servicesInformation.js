@@ -50,7 +50,7 @@ const astrologyInfo =    {
 const servicesInfo = [
   {
     title: 'Tarot Readings',
-    image: 'dist/Images/symbols/tarotReading_07.png',
+    image: 'dist/Images/symbols/tarotReading_08.png',
     calendly: 'https://calendly.com/mleys/service-1',
     symbol: 'dist/Images/symbols/tarotMystic_03_edit.png',
     summary: 'Divination using a deck of 78 cards, offering insight into life situations, personal growth, and decision-making.',
@@ -65,7 +65,7 @@ const servicesInfo = [
     ]
   },{
     title: 'Birth Chart Readings',
-    image: 'dist/Images/symbols/brithChartReading_03_edit.png',
+    image: 'dist/Images/symbols/brithChartReading_07.png',
     calendly: 'https://calendly.com/mleys/service-2',
     symbol: 'dist/Images/symbols/brithChartReading_01_edit.png',
     summary: 'Astrological analysis based on the planetary positions at one\'s birth, providing deep personal insights and life path guidance.',
@@ -80,7 +80,7 @@ const servicesInfo = [
     ]
   },{
     title: 'Oracle Readings', 
-    image: 'dist/Images/symbols/oracleReading_09.png',
+    image: 'dist/Images/symbols/oracleReading_05.png',
     calendly: 'https://calendly.com/mleys/service-1',
     symbol: 'dist/Images/symbols/naturalHealing_02_edit2.png',
     summary: 'Spiritual guidance using unique oracle cards, each carrying specific uplifting messages and insights for personal enlightenment.',

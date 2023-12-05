@@ -14,11 +14,15 @@ import CardActionArea from '@mui/material/CardActionArea';
 
 export default function ServiceCard({title, description, image, calendly }) {
   return ( 
-    <Card elevation={6} px={0} sx={{ maxHeight: 400, flexGrow: 1 }}>
+    <Card elevation={6} sx={{ maxWidth: 400, position: 'relative' }}> {/* Adjust maxWidth to suit your layout */}
       <CardActionArea>
         <CardMedia
-          component={'img'}
-          height={140}
+          component="img"
+          sx={{
+            height: 'auto', 
+            width: '100%', 
+            objectFit: 'cover', 
+          }}
           image={image}
           alt={title}
         />
