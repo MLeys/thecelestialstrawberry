@@ -2,6 +2,7 @@ import * as React from 'react';
 import theme from '../../theme';
 import { useNavigate } from 'react-router-dom';
 
+import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -61,7 +62,25 @@ export default function ServiceCard({index, service }) {
             {summary}
           </Typography>
         </CardContent>
-        <Button
+        <Box
+          className="more-info-button"
+          sx={{ 
+            position: 'absolute', 
+            top: '50%', 
+            left: '50%', 
+            transform: 'translate(-50%, -50%)', 
+            display: 'none', 
+            backgroundColor: 'primary.main', // Style similar to a Button
+            color: 'white',
+            padding: '8px 16px',
+            borderRadius: '4px',
+            textAlign: 'center',
+            // Add any other styling to mimic a button
+          }}
+        >
+          Learn More
+        </Box>
+        {/* <Button
           className="more-info-button"
           size="medium"
           variant="contained"
@@ -75,7 +94,7 @@ export default function ServiceCard({index, service }) {
           }}
         >
           Learn More
-        </Button>
+        </Button> */}
       </StyledCardActionArea>
       <CardActions>
         <Button size="small" color="primary" href={calendly} target='_blank'>
