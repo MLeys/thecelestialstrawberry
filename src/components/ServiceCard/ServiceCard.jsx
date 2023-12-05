@@ -41,7 +41,7 @@ export default function ServiceCard({index, service }) {
   const benefits = service.benefits;
   
   return ( 
-    <Card elevation={6} sx={{ maxWidth: 400, position: 'relative' }}> {/* Adjust maxWidth to suit your layout */}
+    <Card elevation={6} sx={{ maxWidth: 400, position: 'relative' }}> 
       <StyledCardActionArea>
         <CardMedia
           component="img"
@@ -71,7 +71,7 @@ export default function ServiceCard({index, service }) {
             top: '50%', 
             left: '50%', 
             transform: 'translate(-50%, -50%)', 
-            display: 'none', // Hidden by default
+            display: 'none', 
           }}
         >
           Learn More

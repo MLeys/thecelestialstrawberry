@@ -50,9 +50,9 @@ const astrologyInfo =    {
 const servicesInfo = [
   {
     title: 'Tarot Readings',
-    image: 'dist/Images/symbols/tarotReading_08.png',
+    image: 'Images/symbols/tarotReading_08.png',
     calendly: 'https://calendly.com/mleys/service-1',
-    symbol: 'dist/Images/symbols/tarotMystic_03_edit.png',
+    symbol: 'images/symbols/tarotMystic_03.png',
     summary: 'Divination using a deck of 78 cards, offering insight into life situations, personal growth, and decision-making.',
     overview: 'Tarot readings use a deck of 78 cards for divination, originating in mid-15th century Europe. Initially a card game, it evolved into a divination tool in the 18th century. The deck is divided into Major and Minor Arcana, each with unique imagery and symbolism.',
     purpose: 'Tarot readings provide personal guidance, self-reflection, and decision-making support. They offer clarity on life situations, helping understand underlying patterns, challenges, and opportunities.',
@@ -65,9 +65,9 @@ const servicesInfo = [
     ]
   },{
     title: 'Birth Chart Readings',
-    image: 'dist/Images/symbols/brithChartReading_07.png',
+    image: 'Images/symbols/brithChartReading_07.png',
     calendly: 'https://calendly.com/mleys/service-2',
-    symbol: 'dist/Images/symbols/brithChartReading_01_edit.png',
+    symbol: 'Images/symbols/brithChartReading_01.png',
     summary: 'Astrological analysis based on the planetary positions at one\'s birth, providing deep personal insights and life path guidance.',
     overview: 'Birth chart readings analyze an astrological chart for the exact time, date, and location of someone\'s birth. This practice maps planetary positions and astrological houses, offering a unique insight into personality and life journey.',
     purpose: 'The readings provide detailed insights into character, strengths, weaknesses, and potential life path. They aid in self-discovery, understanding personal dynamics, and making life decisions.',
@@ -80,9 +80,9 @@ const servicesInfo = [
     ]
   },{
     title: 'Oracle Readings', 
-    image: 'dist/Images/symbols/oracleReading_05.png',
+    image: 'Images/symbols/oracleReading_05.png',
     calendly: 'https://calendly.com/mleys/service-1',
-    symbol: 'dist/Images/symbols/naturalHealing_02_edit2.png',
+    symbol: 'Images/symbols/naturalHealing_02e.png',
     summary: 'Spiritual guidance using unique oracle cards, each carrying specific uplifting messages and insights for personal enlightenment.',
     overview: 'Oracle readings use unique oracle cards for divination, differing from tarot cards. Modern oracle cards, popularized in the late 20th century, vary in theme and number, each carrying specific messages or insights.',
     purpose: 'Oracle readings offer spiritual guidance, self-reflection, and decision-making support. They provide direct and uplifting messages, offering comfort, motivation, and a deeper understanding of personal and spiritual matters.',
