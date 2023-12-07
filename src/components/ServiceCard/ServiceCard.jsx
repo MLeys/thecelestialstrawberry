@@ -80,21 +80,6 @@ export default function ServiceCard({index, service, onClick }) {
         >
           Learn More
         </Box>
-        {/* <Button
-          className="more-info-button"
-          size="medium"
-          variant="contained"
-          color="primary"
-          sx={{ 
-            position: 'absolute', 
-            top: '50%', 
-            left: '50%', 
-            transform: 'translate(-50%, -50%)', 
-            display: 'none', 
-          }}
-        >
-          Learn More
-        </Button> */}
       </StyledCardActionArea>
       <CardActions>
         <Button size="small" color="primary" href={calendly} target='_blank'>
