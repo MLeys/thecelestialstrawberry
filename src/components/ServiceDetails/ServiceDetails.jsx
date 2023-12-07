@@ -13,8 +13,9 @@ export default function ServiceDetails({ service }) {
 
       <Grid container spacing={2}>
         <Grid xs={12}>
-          <Typography variant="h4" color="primary.main" gutterBottom>
-            {service.title}
+          <Typography variant="h4" color="primary.main" display={'flex'} align='center' alignItems={'center'} justifyContent={'flex-start'} gutterBottom>
+            <ImageIcon src={`${service.symbol}`} size={150} />
+             {service.title}
           </Typography>
         </Grid>
         <Grid xs={12}>
@@ -25,9 +26,7 @@ export default function ServiceDetails({ service }) {
           <Typography variant="body1" >
             {service.purpose}
           </Typography>
-
         </Grid>
-      <ImageIcon src={`${service.symbol}`} size={150} />
 
         <Grid xs={12}>
           <Typography variant="h6" color="secondary.main">
@@ -35,7 +34,7 @@ export default function ServiceDetails({ service }) {
           </Typography>
 
           {service.benefits.map((benefit) => (
-            <Typography variant="body2" >
+            <Typography key={crypto.randomUUID()} variant="body2" >
               -{benefit.name}  - {benefit.description}
             </Typography>
           ))}
