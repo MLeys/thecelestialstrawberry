@@ -5,9 +5,12 @@ import Typography from '@mui/material/Typography';
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import Paper from '@mui/material/Paper';
 
+import ImageIcon from '../ImageIcon/ImageIcon';
+
 export default function ServiceDetails({ service }) {
   return (
-    <Paper elevation={6} sx={{ margin: 4, padding: 3, backgroundColor: 'background.paper' }}>
+    <Paper elevation={6} sx={{ margin: 4, padding: 3, backgroundColor: 'background.paper' }}> 
+
       <Grid container spacing={2}>
         <Grid xs={12}>
           <Typography variant="h4" color="primary.main" gutterBottom>
@@ -16,16 +19,27 @@ export default function ServiceDetails({ service }) {
         </Grid>
         <Grid xs={12}>
           <Typography variant="body1" >
-            {service.summary}
+            {service.overview}
           </Typography>
+          <br/>
+          <Typography variant="body1" >
+            {service.purpose}
+          </Typography>
+
         </Grid>
+      <ImageIcon src={`${service.symbol}`} size={150} />
+
         <Grid xs={12}>
           <Typography variant="h6" color="secondary.main">
             Benefits
           </Typography>
-          <Typography variant="body2" >
-            {/* {service.benefits} */}
-          </Typography>
+
+          {service.benefits.map((benefit) => (
+            <Typography variant="body2" >
+              -{benefit.name}  - {benefit.description}
+            </Typography>
+          ))}
+
         </Grid>
       </Grid>
     </Paper>

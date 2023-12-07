@@ -52,7 +52,7 @@ const servicesInfo = [
     title: 'Tarot Readings',
     image: 'Images/symbols/tarotReading_08.png',
     calendly: 'https://calendly.com/mleys/service-1',
-    symbol: 'images/symbols/tarotMystic_03.png',
+    symbol: 'Images/symbols/tarotReading_07.png',
     summary: 'Divination using a deck of 78 cards, offering insight into life situations, personal growth, and decision-making.',
     overview: 'Tarot readings use a deck of 78 cards for divination, originating in mid-15th century Europe. Initially a card game, it evolved into a divination tool in the 18th century. The deck is divided into Major and Minor Arcana, each with unique imagery and symbolism.',
     purpose: 'Tarot readings provide personal guidance, self-reflection, and decision-making support. They offer clarity on life situations, helping understand underlying patterns, challenges, and opportunities.',
