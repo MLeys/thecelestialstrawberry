@@ -11,7 +11,7 @@ export default function ServiceDetails({ service }) {
   return (
     <Paper elevation={6} sx={{ margin: 4, padding: 3, backgroundColor: 'background.paper' }}> 
 
-      <Grid container spacing={2}>
+      <Grid container component={'container'} spacing={2} >
         <Grid xs={12}>
           <Typography variant="h4" color="primary.main" display={'flex'} align='center' alignItems={'center'} justifyContent={'flex-start'} gutterBottom>
             <ImageIcon src={`${service.symbol}`} size={150} />

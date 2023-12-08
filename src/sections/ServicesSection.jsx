@@ -6,12 +6,16 @@ import servicesInfo from '../assets/servicesInformation';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
 
+import Pricing from './PricingSection';
 import ServiceDetails from '../components/ServiceDetails/ServiceDetails';
 import ServiceCard from '../components/ServiceCard/ServiceCard';
+
+
 
 export default function ServicesSection() {
   const [activeService, setActiveService] = useState(servicesInfo[0]); 
   const serviceDetailsRef = useRef(null);
+
 
 
   function  handleServiceClick(service) {
@@ -66,10 +70,12 @@ export default function ServicesSection() {
       <Grid>
       </Grid>
     </Grid>
-    <Box ref={serviceDetailsRef} mb={500}>
+    <Box ref={serviceDetailsRef} mb={5}>
       <ServiceDetails service={activeService} />
       
     </Box>
+        
+    {/* <Pricing /> */}
     </>
 
   );
