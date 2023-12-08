@@ -23,7 +23,7 @@ export default function ServicesSection() {
     const element = serviceDetailsRef.current;
   
     if (element) {
-      const offset = 175; // Height of the fixed header or any other offset
+      const offset = 100; // Height of the fixed header or any other offset
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = element.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;
