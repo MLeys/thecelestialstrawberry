@@ -2,25 +2,31 @@ import React from 'react';
 import theme from '../../theme';
 
 import Box from '@mui/material/Box';
-import Fab from '@mui/material/Fab';
-import Zoom from '@mui/material/Zoom'; // Import Zoom for animation
 
-import ImageIcon from '../ImageIcon/ImageIcon';
+import FloatingActionButton from '../FloatingActionButton/FloatingActionButton';
 
 export default function FloatingActionBar() {
+  const iconSize = 100;
+  const transitionTime = '5s';
+  const scale = '1.5'
   
 
-  return (  
 
-    <Zoom in={true} timeout={300}>
-      <Fab color="primary" aria-label="navigate" sx={{
-        position: 'fixed', // Fixed position
-        bottom: '50%', // Vertically in the middle
-        right: theme.spacing(2), // 16px from the right edge
-        transform: 'translateY(50%)' // Adjust vertical position
-      }}>
-        <ImageIcon src={'Images/symbols/cosmoStar_03.png'}  size={100}/> 
-      </Fab>
-    </Zoom>
+  return (
+    <Box sx={{
+      position: 'fixed', // Fixed position for the entire box
+      bottom: '35%', // Vertically in the middle
+      right: theme.spacing(4), // 16px from the right edge
+      transform: 'translateY(50%)', // Adjust vertical position
+      display: 'flex', // Use flexbox
+      flexDirection: 'column', // Align children vertically
+      gap: theme.spacing(5), // Increase gap between buttons
+      zIndex: 1201 // Higher than most other elements
+    }}>
+      
+      <FloatingActionButton time={transitionTime} scale={scale} size={iconSize} />
+      <FloatingActionButton time={transitionTime} scale={scale} size={iconSize}  img='Images/symbols/naturalHealing_02e.png' />
+      <FloatingActionButton time={transitionTime} scale={scale} size={iconSize} img='Images/symbols/tarotMystic_03.png' />
+    </Box>
   );
 };
