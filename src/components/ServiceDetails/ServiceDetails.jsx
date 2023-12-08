@@ -35,7 +35,7 @@ export default function ServiceDetails({ service }) {
 
           {service.benefits.map((benefit) => (
             <Typography key={crypto.randomUUID()} variant="body2" >
-              -{benefit.name}  - {benefit.description}
+              <b>-{benefit.name}</b>  - {benefit.description}
             </Typography>
           ))}
 

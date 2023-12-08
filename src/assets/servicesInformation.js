@@ -83,7 +83,7 @@ const servicesInfo = [
   },{
     title: 'Oracle Readings', 
     image: 'Images/symbols/oracleReading_05.png',
-    calendly: 'https://calendly.com/mleys/service-1',
+    calendly: 'https://calendly.com/mleys/teststripe',
     symbol: 'Images/symbols/naturalHealing_02e.png',
     summary: 'Spiritual guidance using unique oracle cards, each carrying specific uplifting messages and insights for personal enlightenment.',
     overview: 'Oracle readings use unique oracle cards for divination, differing from tarot cards. Modern oracle cards, popularized in the late 20th century, vary in theme and number, each carrying specific messages or insights.',

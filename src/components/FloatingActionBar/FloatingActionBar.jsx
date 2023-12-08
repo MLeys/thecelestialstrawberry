@@ -37,7 +37,7 @@ export default function FloatingActionBar() {
     }}>
       <FloatingActionButton 
         img={facebookLogo} time={transitionTime} scale={scale} size={iconSize}
-        onClick={() => handleIconClick('https://www.facebook.com/username')}
+        onClick={() => handleIconClick('https://www.facebook.com/thecelestialstrawberry')}
       
       />
       <FloatingActionButton 
@@ -45,8 +45,8 @@ export default function FloatingActionBar() {
         onClick={() => handleIconClick('https://www.tiktok.com/@thecelestialstrawberry')}
       />
       <FloatingActionButton 
-      img={tiktokLogo}  time={transitionTime} scale={scale} size={iconSize}
-      onClick={() => handleIconClick('https://www.instagram.com/thecelestialstrawberry')}
+        img={tiktokLogo}  time={transitionTime} scale={scale} size={iconSize}
+        onClick={() => handleIconClick('https://www.instagram.com/thecelestialstrawberry')}
       />
     </Box>
   );
