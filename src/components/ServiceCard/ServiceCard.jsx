@@ -1,6 +1,5 @@
 import * as React from 'react';
-import theme from '../../theme';
-import { useNavigate } from 'react-router-dom';
+
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -12,7 +11,7 @@ import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 import { styled } from '@mui/material/styles';
 
-const StyledCardActionArea = styled(CardActionArea)(({ theme }) => ({
+const StyledCardActionArea = styled(CardActionArea)({
   position: 'relative',
   '&:hover': {
     '&::before': {
@@ -22,25 +21,36 @@ const StyledCardActionArea = styled(CardActionArea)(({ theme }) => ({
       left: 0,
       height: '100%',
       width: '100%',
-      backgroundColor: 'rgba(0, 0, 0, 0.2)', // Adjust the color and opacity for the dimming effect
+      backgroundColor: 'rgba(0, 0, 0, 0.2)',
     },
     '& .more-info-button': {
       display: 'flex',
+      opacity: 1,
     },
   },
-}));
+  '& .more-info-button': {
+    transition: 'opacity 0.9s ease, transform 1.9s ease',
+    position: 'absolute', 
+    top: '50%', 
+    left: '50%', 
+    transform: 'translate(-50%, -50%)', 
+    display: 'block',
 
+    backgroundColor: 'rgba(0, 0, 0, 0.4)',
+    color: 'white',
+    padding: '8px 16px',
+    borderRadius: '33px',
+    // padding: '8px 16px',
+    // borderRadius: '4px',
+    textAlign: 'center',
+    opacity: 0,
+  }
+});
 
 export default function ServiceCard({index, service, onClick }) {
-  const title = service.title;
-  const image = service.image;
-  const calendly = service.calendly;
-  const symbol = service.symbol;
-  const summary = service.summary;
-  const overview = service.overview;
-  const purpose = service.purpose;
-  const benefits = service.benefits;
-  
+  const { title, image, calendly, summary, cardHoverWord } = service;
+
+
   return ( 
     <Card elevation={6} sx={{ maxWidth: 400, position: 'relative' }}> 
       <StyledCardActionArea  onClick={() => onClick(service)}>
@@ -62,23 +72,8 @@ export default function ServiceCard({index, service, onClick }) {
             {summary}
           </Typography>
         </CardContent>
-        <Box
-          className="more-info-button"
-          sx={{ 
-            position: 'absolute', 
-            top: '50%', 
-            left: '50%', 
-            transform: 'translate(-50%, -50%)', 
-            display: 'none', 
-            backgroundColor: 'primary.main', // Style similar to a Button
-            color: 'white',
-            padding: '8px 16px',
-            borderRadius: '4px',
-            textAlign: 'center',
-            // Add any other styling to mimic a button
-          }}
-        >
-          Learn More
+        <Box className="more-info-button">
+          <Typography variant='h3'>{cardHoverWord}</Typography>
         </Box>
       </StyledCardActionArea>
       <CardActions>

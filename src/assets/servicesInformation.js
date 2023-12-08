@@ -56,6 +56,7 @@ const servicesInfo = [
     summary: 'Divination using a deck of 78 cards, offering insight into life situations, personal growth, and decision-making.',
     overview: 'Tarot readings use a deck of 78 cards for divination, originating in mid-15th century Europe. Initially a card game, it evolved into a divination tool in the 18th century. The deck is divided into Major and Minor Arcana, each with unique imagery and symbolism.',
     purpose: 'Tarot readings provide personal guidance, self-reflection, and decision-making support. They offer clarity on life situations, helping understand underlying patterns, challenges, and opportunities.',
+    cardHoverWord: 'Guidance',
     benefits: [
       { name: 'Decision-Making Aid', description: 'Assists in making informed decisions by offering different perspectives.' },
       { name: 'Self-Reflection', description: 'Encourages introspection and self-awareness.' },
@@ -71,6 +72,7 @@ const servicesInfo = [
     summary: 'Astrological analysis based on the planetary positions at one\'s birth, providing deep personal insights and life path guidance.',
     overview: 'Birth chart readings analyze an astrological chart for the exact time, date, and location of someone\'s birth. This practice maps planetary positions and astrological houses, offering a unique insight into personality and life journey.',
     purpose: 'The readings provide detailed insights into character, strengths, weaknesses, and potential life path. They aid in self-discovery, understanding personal dynamics, and making life decisions.',
+    cardHoverWord: 'Clairity',
     benefits: [
       { name: 'Personalized Insights', description: 'Provides a detailed and unique understanding of an individual’s personality.' },
       { name: 'Life Path Clarity', description: 'Offers clarity on one’s strengths, weaknesses, and potential life path.' },
@@ -86,6 +88,7 @@ const servicesInfo = [
     summary: 'Spiritual guidance using unique oracle cards, each carrying specific uplifting messages and insights for personal enlightenment.',
     overview: 'Oracle readings use unique oracle cards for divination, differing from tarot cards. Modern oracle cards, popularized in the late 20th century, vary in theme and number, each carrying specific messages or insights.',
     purpose: 'Oracle readings offer spiritual guidance, self-reflection, and decision-making support. They provide direct and uplifting messages, offering comfort, motivation, and a deeper understanding of personal and spiritual matters.',
+    cardHoverWord: 'Connection',
     benefits: [
       { name: 'Spiritual Connectivity', description: 'Enhances spiritual connection and personal enlightenment.' },
       { name: 'Motivational Guidance', description: 'Provides uplifting and motivational messages.' },
