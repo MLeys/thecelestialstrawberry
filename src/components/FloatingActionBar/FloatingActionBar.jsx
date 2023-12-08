@@ -14,16 +14,16 @@ export default function FloatingActionBar() {
 
   return (
     <Box sx={{
-      position: 'fixed', // Fixed position for the entire box
-      bottom: '35%', // Vertically in the middle
-      right: theme.spacing(4), // 16px from the right edge
-      transform: 'translateY(50%)', // Adjust vertical position
-      display: 'flex', // Use flexbox
-      flexDirection: 'column', // Align children vertically
-      gap: theme.spacing(5), // Increase gap between buttons
-      zIndex: 1201 // Higher than most other elements
+      position: 'fixed', 
+      bottom: '35%', 
+      right: theme.spacing(4), 
+      transform: 'translateY(50%)', 
+      display: 'flex',
+      flexDirection: 'column',
+      gap: theme.spacing(5), 
+      zIndex: 1201 
     }}>
-      
+
       <FloatingActionButton time={transitionTime} scale={scale} size={iconSize} />
       <FloatingActionButton time={transitionTime} scale={scale} size={iconSize}  img='Images/symbols/naturalHealing_02e.png' />
       <FloatingActionButton time={transitionTime} scale={scale} size={iconSize} img='Images/symbols/tarotMystic_03.png' />
