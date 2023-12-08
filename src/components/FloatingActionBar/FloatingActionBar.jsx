@@ -24,7 +24,8 @@ export default function FloatingActionBar() {
       gap: theme.spacing(3), 
       zIndex: 1201 
     }}>
-      <FacebookIcon size={iconSize} color='blue' />
+      <FloatingActionButton icon={<FacebookIcon size={iconSize} color='blue'  />}/>
+      
       <FloatingActionButton time={transitionTime} scale={scale} size={iconSize} />
       <FloatingActionButton time={transitionTime} scale={scale} size={iconSize}  img='Images/symbols/naturalHealing_02e.png' />
       <FloatingActionButton time={transitionTime} scale={scale} size={iconSize} img='Images/symbols/tarotMystic_03.png' />
