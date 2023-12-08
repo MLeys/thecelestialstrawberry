@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import theme from "../../theme";
 
 import Box from '@mui/material/Box';
@@ -12,7 +12,6 @@ import ProductsSection from "../../sections/ServicesSection";
 
 function LandingPage() {
   const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-  
 
   return (  
     <Box id="landing-page" component={'div'} height={'100%'} width={'100%'} sx={{ my: { xs: 6, sm: 8, md: 10 } }}>
@@ -20,7 +19,8 @@ function LandingPage() {
       <FloatingActionBar />
       <HeroSection />
       <IntroSection />
-      <ProductsSection />
+      {/* <ProductsSection /> */}
+
     </Box>
   );
 }
