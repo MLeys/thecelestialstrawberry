@@ -19,7 +19,12 @@ const avatar = "/Images/avatarMike.jpg";
 const avatarSize = 100;
 const name = "Laura Yeomens";
 const title = "Hellenistic Astrologer";
-const aboutText = "Howdy, cosmic wanderers! I'm Laura, your astrologer maven, tarot lover, and candle conjurer. With a heart full of magic and a spirit that sparkles like the stars, I'm here to help you navigate the celestial dance and discover the magic within you."
+const aboutText = `
+  Howdy, cosmic wanderers!
+  I'm Laura, your astrologer maven, tarot lover, and candle conjurer. With a heart full 
+  of magic and a spirit that sparkles like the stars, I'm here to help you navigate the 
+  celestial dance and discover the magic within you.
+`;
 
 
 function ProfilePic({name, avatar, title}) {
@@ -32,8 +37,6 @@ function ProfilePic({name, avatar, title}) {
         p: 0,
         m: 0,
         height: '100%',
-        // width: '100%',
-        // paddingTop: `${aspectRatio}%`, // This creates the aspect ratio
         position: 'relative',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
