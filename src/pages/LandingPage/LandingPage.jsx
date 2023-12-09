@@ -22,7 +22,7 @@ function LandingPage() {
       <FloatingActionBar />
       <HeroSection />
       <IntroSection />
-      <ServicesSection />
+      <ServicesSection id='services'/>
       {/* <ProductsSection /> */}
       
 

@@ -30,7 +30,7 @@ export default function Footer() {
         mt: 'auto',
       }}
       >
-      <Container maxWidth="sm">
+      <Container maxWidth="sm" >
         <Typography variant="body1" >
           The Celestial Strawberry
         </Typography>

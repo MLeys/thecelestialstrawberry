@@ -11,7 +11,7 @@ export default function ServiceDetails({ service }) {
   return (
     <Paper elevation={6} sx={{ margin: 4, padding: 3, backgroundColor: 'background.paper' }}> 
 
-      <Grid container component={'container'} spacing={2} >
+      <Grid container spacing={2} >
         <Grid xs={12}>
           <Typography variant="h4" color="primary.main" display={'flex'} align='center' alignItems={'center'} justifyContent={'flex-start'} gutterBottom>
             <ImageIcon src={`${service.symbol}`} size={150} />
@@ -29,8 +29,8 @@ export default function ServiceDetails({ service }) {
         </Grid>
 
         <Grid xs={12}>
-          <Typography variant="h6" color="secondary.main">
-            Benefits
+          <Typography variant="h6" color="secondary.dark">
+            <b>Benefits</b>
           </Typography>
 
           {service.benefits.map((benefit) => (
