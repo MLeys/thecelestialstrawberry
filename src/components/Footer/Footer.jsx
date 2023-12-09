@@ -35,6 +35,9 @@ export default function Footer() {
           The Celestial Strawberry
         </Typography>
         <Copyright />
+        <Typography color='white' varient='info' component={Link} href="#">
+          Disclaimer
+        </Typography>
       </Container>
     </Box>
   )
