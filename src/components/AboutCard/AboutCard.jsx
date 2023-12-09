@@ -1,22 +1,14 @@
 import * as React from 'react';
 import theme from '../../theme';
 
-import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
+
 import Typography from '@mui/material/Typography';
-import CardActionArea from '@mui/material/CardActionArea';
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import Paper from '@mui/material/Paper';
-import { styled } from '@mui/material/styles';
 import { NavLink } from 'react-router-dom';
 
-const avatar = "/Images/avatarMike.jpg";
-const avatarSize = 100;
+const avatar = "/Images/avatarLaura.jpg";
 const name = "Laura Yeomens";
 const title = "Hellenistic Astrologer";
 const aboutText = () => {  
@@ -61,7 +53,7 @@ function ProfilePic({name, avatar, title}) {
         variant='h6' 
         color={theme.palette.primary.contrastText} 
         fontWeight={800}
-        bgcolor='rgba(0, 0, 0, 0.3)'
+        bgcolor='rgba(0, 0, 0, 0.5)'
         borderRadius= '33px'
         px={2}
         py={1}
@@ -74,15 +66,6 @@ function ProfilePic({name, avatar, title}) {
     </Box>
       
   )
-  // return (
-  //   <Avatar
-  //     alt={name}
-  //     variant='rounded'
-      
-  //     src={avatar}
-  //     sx={{ width: size, height: size }}
-  //   />      
-  // )
 };
 
 export default function AboutCard() {
@@ -110,7 +93,6 @@ return (
         <Typography display={{xs: 'none', md: 'block'}} variant='h5' justifyContent={'center'}>
           {aboutText()}
         </Typography>
-        
         <Typography component={NavLink} variant="body1" fontWeight={700}>
           Learn more. . .
         </Typography>
