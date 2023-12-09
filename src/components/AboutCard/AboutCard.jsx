@@ -19,12 +19,20 @@ const avatar = "/Images/avatarMike.jpg";
 const avatarSize = 100;
 const name = "Laura Yeomens";
 const title = "Hellenistic Astrologer";
-const aboutText = `
-  Howdy, cosmic wanderers!
-  I'm Laura, your astrologer maven, tarot lover, and candle conjurer. With a heart full 
-  of magic and a spirit that sparkles like the stars, I'm here to help you navigate the 
-  celestial dance and discover the magic within you.
-`;
+const aboutText = () => {  
+  return (
+    <>
+      <p>
+        Howdy, cosmic wanderers!
+      </p>
+      <p>
+        I'm Laura, your astrologer maven, tarot lover, and candle conjurer. With a heart full 
+        of magic and a spirit that sparkles like the stars, I'm here to help you navigate the 
+        celestial dance and discover the magic within you.
+      </p>
+    </>
+  )
+};
 
 
 function ProfilePic({name, avatar, title}) {
@@ -63,7 +71,7 @@ function ProfilePic({name, avatar, title}) {
         {title}
         </Typography>
       </Typography>
-</Box>
+    </Box>
       
   )
   // return (
@@ -94,13 +102,13 @@ return (
           {title}
         </Typography>
         <Typography display={{xs: 'block', sm: 'none'}} variant='body1' justifyContent={'center'}>
-          {aboutText}
+          {aboutText()}
         </Typography>
         <Typography display={{xs: 'none', sm: 'block', md: 'none'}} variant='h6' justifyContent={'center'}>
-          {aboutText}
+          {aboutText()}
         </Typography>
         <Typography display={{xs: 'none', md: 'block'}} variant='h5' justifyContent={'center'}>
-          {aboutText}
+          {aboutText()}
         </Typography>
         
         <Typography component={NavLink} variant="body1" fontWeight={700}>
