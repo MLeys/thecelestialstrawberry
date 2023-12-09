@@ -51,6 +51,19 @@ const customPalette = {
     dark: '#040132', 
     contrastText: '#ffffff',
   },
+  bgBlue: {
+    light: '#436786', 
+    main: '#375f82', 
+    dark: '#2f4567', 
+    contrastText: '#ffffff',
+  },
+  bgPurple: {
+    light: '#7e6178', 
+    main: '#564b68', 
+    dark: '#403e5c', 
+    contrastText: '#ffffff',
+  },
+
   contrastThreshold: 3,
   tonalOffset: 0.2,
 };

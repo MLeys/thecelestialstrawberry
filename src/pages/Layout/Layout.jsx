@@ -1,21 +1,20 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { useEffect, useContext} from "react";
 
+import Box from '@mui/material/Box';
+
+
+import Footer from "../../components/Footer/Footer";
 import ResponsiveAppBar from "../../components/ResponsiveAppBar/ResponsiveAppBar";
 
 function Layout() {
-
-
-  useEffect(() => {
-  }, []); 
-
   return (
-    <>
+    <Box component={'main'} display={'flex'} flexDirection={'column'}>
       <ResponsiveAppBar >
         <Outlet />
       </ResponsiveAppBar>
-    </> 
+      <Footer />
+    </Box> 
   )
 }
 
