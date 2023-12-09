@@ -10,17 +10,18 @@ import IntroSection from "../../sections/IntroSection";
 import ProductsSection from "../../sections/ServicesSection";
 import ServicesSection from '../../sections/ServicesSection';
 import Footer from '../../components/Footer/Footer';
-
+import AboutCard from '../../components/AboutCard/AboutCard';
 
 
 function LandingPage() {
   const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
 
   return (  
-    <Box sx={{ mt: { xs: 5.5, sm: 8, md: 10 } }}>
-      
+    <Box  sx={{ mt: { xs: 5.5, sm: 8, md: 10 } }}>
+
       <FloatingActionBar />
       <HeroSection />
+      <AboutCard />
       <IntroSection />
       <ServicesSection id='services'/>
       {/* <ProductsSection /> */}
