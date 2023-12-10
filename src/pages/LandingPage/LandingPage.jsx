@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+
+
 import theme from "../../theme";
 
 import Box from '@mui/material/Box';
@@ -14,7 +16,6 @@ import AboutCard from '../../components/AboutCard/AboutCard';
 
 
 function LandingPage() {
-  const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
 
   return (  
     <Box  sx={{ mt: { xs: 5.5, sm: 8, md: 10 } }}>
