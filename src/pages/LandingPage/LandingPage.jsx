@@ -21,8 +21,8 @@ function LandingPage() {
 
       <FloatingActionBar />
       <HeroSection />
-      <AboutCard />
       <IntroSection />
+      <AboutCard />
       <ServicesSection id='services'/>
       {/* <ProductsSection /> */}
       

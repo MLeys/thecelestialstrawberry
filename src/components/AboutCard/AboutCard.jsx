@@ -2,11 +2,10 @@ import * as React from 'react';
 import theme from '../../theme';
 
 import Box from '@mui/material/Box';
-
 import Typography from '@mui/material/Typography';
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import Paper from '@mui/material/Paper';
-import { NavLink } from 'react-router-dom';
+import { NavLink, } from 'react-router-dom';
 
 const avatar = "/Images/avatarLaura.jpg";
 const name = "Laura Yeomens";
@@ -71,7 +70,7 @@ function ProfilePic({name, avatar, title}) {
 export default function AboutCard() {
 
 return (
-  <Paper elevation={1} sx={{ margin: 4, padding: 0 }}> 
+  <Paper elevation={1} sx={{ marginX: 4, marginY: 15 }}> 
 
     <Grid container spacing={0} height={'100%'} >
       <Grid xs={4} minHeight={'50dvh'} >
