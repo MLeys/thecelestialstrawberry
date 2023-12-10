@@ -4,7 +4,7 @@ export const aboutInfo = [
     text: `Howdy, cosmic wanderers!`
   },
   {
-    part: 'intro',
+    part: 'introduction',
     text: `I'm Laura, your astrologer maven, tarot lover, and candle conjurer. With a heart full 
       of magic and a spirit that sparkles like the stars, I'm here to help you navigate the 
       celestial dance and discover the magic within you.`

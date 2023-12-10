@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useNavigate } from "react-router-dom";
 
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -16,10 +17,20 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Services'];
+
+const navItems = [
+  {
+    title: 'Home', link: '/'
+  },{
+    title: 'About', link: 'about'
+  },{
+    title: 'Services', link: 'services'
+  }
+]
+  
 
 function ResponsiveAppBar({ children }) {
-
+  const navigate = useNavigate();
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -34,9 +45,9 @@ function ResponsiveAppBar({ children }) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+          <ListItem key={item.title} disablePadding>
+            <ListItemButton sx={{ textAlign: 'center' }} onClick={() => navigate(item.link)}>
+              <ListItemText primary={item.title} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -86,8 +97,12 @@ function ResponsiveAppBar({ children }) {
 
           <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
             {navItems.map(item => (
-              <Button key={item} sx={{ color: '#fff', fontFamily: 'fantasy', ...menuItemFontSizes }}>
-                {item}
+              <Button 
+                key={item.title} 
+                onClick={() => navigate(item.link)}
+                sx={{ color: '#fff', fontFamily: 'fantasy', ...menuItemFontSizes }}
+              >
+                {item.title}
               </Button>
             ))}
           </Box>
