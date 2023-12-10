@@ -22,9 +22,9 @@ const navItems = [
   {
     title: 'Home', link: '/'
   },{
-    title: 'About', link: 'about'
+    title: 'About', link: '/about'
   },{
-    title: 'Services', link: 'services'
+    title: 'Services', link: '/services'
   }
 ]
   
@@ -69,7 +69,7 @@ function ResponsiveAppBar({ children }) {
   };
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ mt: { xs: 5.5, sm: 8, md: 10 } }} >
       <CssBaseline />
       <AppBar component="nav">
         <Toolbar>

@@ -9,7 +9,7 @@ import ResponsiveAppBar from "../../components/ResponsiveAppBar/ResponsiveAppBar
 
 function Layout() {
   return (
-    <Box component={'main'} display={'flex'} flexDirection={'column'}>
+    <Box component={'main'} display={'flex'} flexDirection={'column'} >
       <ResponsiveAppBar >
         <Outlet />
       </ResponsiveAppBar>

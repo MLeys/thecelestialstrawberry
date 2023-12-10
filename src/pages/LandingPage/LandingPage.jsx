@@ -18,7 +18,7 @@ import AboutCard from '../../components/AboutCard/AboutCard';
 function LandingPage() {
 
   return (  
-    <Box  sx={{ mt: { xs: 5.5, sm: 8, md: 10 } }}>
+    <Box >
 
       <FloatingActionBar />
       <HeroSection />
