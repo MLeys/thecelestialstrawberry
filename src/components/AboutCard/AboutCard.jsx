@@ -83,13 +83,13 @@ return (
         <Typography display={{xs: 'block', sm: 'none'}} variant='body2' align='center' fontWeight={700} pb={1}>
           {title}
         </Typography>
-        <Typography display={{xs: 'block', sm: 'none'}} variant='body1' justifyContent={'center'}>
+        <Typography component={'div'} display={{xs: 'block', sm: 'none'}} variant='body1' justifyContent={'center'}>
           {aboutText()}
         </Typography>
-        <Typography display={{xs: 'none', sm: 'block', md: 'none'}} variant='h6' justifyContent={'center'}>
+        <Typography component={'div'} display={{xs: 'none', sm: 'block', md: 'none'}} variant='h6' justifyContent={'center'}>
           {aboutText()}
         </Typography>
-        <Typography display={{xs: 'none', md: 'block'}} variant='h5' justifyContent={'center'}>
+        <Typography component={'div'} display={{xs: 'none', md: 'block'}} variant='h5' justifyContent={'center'}>
           {aboutText()}
         </Typography>
         <Typography component={NavLink} variant="body1" fontWeight={700}>
