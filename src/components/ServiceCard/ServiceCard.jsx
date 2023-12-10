@@ -48,7 +48,6 @@ const StyledCardActionArea = styled(CardActionArea)({
 });
 
 export default function ServiceCard({index, service, onClick }) {
-  console.log(service)
   const { title, image, calendly, summary, cardHoverWord } = service;
 
 

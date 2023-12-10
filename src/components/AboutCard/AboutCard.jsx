@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useNavigate } from "react-router-dom";
 
+import { aboutInfo } from '../../assets/aboutInfo';
 import theme from '../../theme';
 
 import Link from '@mui/material/Link'
@@ -13,21 +14,6 @@ import Paper from '@mui/material/Paper';
 const avatar = "/Images/avatarLaura.jpg";
 const name = "Laura Yeomens";
 const title = "Hellenistic Astrologer";
-
-const aboutText = () => {  
-  return (
-    <>
-      <p>
-        Howdy, cosmic wanderers!
-      </p>
-      <p>
-        I'm Laura, your astrologer maven, tarot lover, and candle conjurer. With a heart full 
-        of magic and a spirit that sparkles like the stars, I'm here to help you navigate the 
-        celestial dance and discover the magic within you.
-      </p>
-    </>
-  )
-};
 
 
 function ProfilePic({name, avatar, title}) {
@@ -52,7 +38,7 @@ function ProfilePic({name, avatar, title}) {
       }}
     >
       <Typography 
-        display={{xs: 'none', sm: 'block'}}
+        // display={{xs: 'none', sm: 'block'}}
         variant='h6' 
         color={theme.palette.primary.contrastText} 
         fontWeight={800}
@@ -74,35 +60,35 @@ function ProfilePic({name, avatar, title}) {
 export default function AboutCard() {
   const navigate = useNavigate();
 
+  const greeting = aboutInfo.find(item => item.part === 'greeting')?.text;
+  const introduction = aboutInfo.find(item => item.part === 'introduction')?.text;
+  const body1 = aboutInfo.find(item => item.part === 'body1')?.text;
+  const body2 = aboutInfo.find(item => item.part === 'body2')?.text;
+  const signature = aboutInfo.find(item => item.part === 'signature')?.text;
+
+
   return (
     <Paper elevation={1} sx={{ marginX: 4, marginY: 15 }}> 
 
-      <Grid container spacing={0} height={'100%'} >
-        <Grid xs={4} minHeight={'50dvh'} >
+      <Grid container my={4} py={2} display={'flex'} justifyContent={'center'} >
+        <Grid xs={8} sm={4} minHeight={'50dvh'} >
           <ProfilePic name={name} avatar={avatar} title={title}/>
         </Grid>
-        <Grid xs={8} p={2} pt={1}>
-          <Typography display={{xs: 'block', sm: 'none'}} variant='h6' align='center' fontWeight={700}>
-            {name}
+        <Grid xs={10} sm={8} md={8} p={2} pt={1}>
+          <Typography display={{xs: 'block', sm: 'flex'}} variant='h6' pb={2} >
+            {greeting}
           </Typography>
-          <Typography display={{xs: 'block', sm: 'none'}} variant='subtitle1' align='center' fontWeight={700} pb={1}>
-            {title}
+          <Typography display={{xs: 'block', sm: 'flex'}} variant='body1' pb={1}>
+            {introduction}
           </Typography>
-          <Typography component={'div'} display={{xs: 'block', sm: 'none'}} variant='body1' justifyContent={'center'}>
-            {aboutText()}
+          <Typography display={{xs: 'none', sm: 'flex'}} variant='body1' pb={1}>
+            {body1}
           </Typography>
-          <Typography component={'div'} display={{xs: 'none', sm: 'block', md: 'none'}} variant='h6' justifyContent={'center'}>
-            {aboutText()}
-          </Typography>
-          <Typography component={'div'} display={{xs: 'none', md: 'block'}} variant='h5' justifyContent={'center'}>
-            {aboutText()}
-          </Typography>
-          <Link  onClick={() => navigate('about')}>
+          <Link onClick={() => navigate('about')}>
             <Typography  fontWeight={700}>
               Learn More . . .
-            </Typography>`
+            </Typography>
           </Link>
-
         </Grid>
       </Grid>
     </Paper>
