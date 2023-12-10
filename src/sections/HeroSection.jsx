@@ -12,6 +12,7 @@ const heroImage = [
   'https://imgur.com/448Bu3s.png',
 ]
 
+
 export default function HeroSection() {
   const aspectRatio = 56.25; // padding-top hack to keep image whole dynamically
 
