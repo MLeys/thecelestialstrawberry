@@ -9,9 +9,9 @@ const iconSize = 32;
 const transitionTime = '0.3s'; 
 const scale = '1.5';
 
-const facebookLogo = 'assets/Images/logos/facebook.png';
-const instragramLogo ='/assets/Images/logos/instagram.png';
-const tiktokLogo = './assets/Images/logos/tiktok.png';
+const facebookLogo = './Images/logos/facebook.png';
+const instragramLogo ='/Images/logos/instagram.png';
+const tiktokLogo = './Images/logos/tiktok.png';
 
 const facebookLink = 'https://www.facebook.com/thecelestialstrawberry';
 const instagramLink = 'https://www.instagram.com/thecelestialstrawberry';
