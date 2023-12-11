@@ -9,8 +9,9 @@
     "preview": "vite preview",
     "start": "node server.js",
     "client": "vite",
-    "server": "nodemon server.js"
-    
+    "server": "nodemon server.js",
+    "deploy": "npm run build && gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@cloudinary/react": "^1.11.2",
@@ -32,6 +33,7 @@
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react": "^3.0.0",
+    "gh-pages": "^6.1.0",
     "vite": "^4.0.0"
   }
 }
