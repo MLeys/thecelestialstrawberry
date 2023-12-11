@@ -1,6 +1,7 @@
-import * as React from 'react';
-import { styled } from '@mui/material/styles';
+import React, { useState, useEffect, useRef } from 'react';
 
+
+import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -9,8 +10,9 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
-const StyledCardActionArea = styled(CardActionArea)({
+const StyledCardActionArea = styled(CardActionArea)(({ theme }) => ({
   position: 'relative',
   '&:hover': {
     '&::before': {
@@ -23,40 +25,58 @@ const StyledCardActionArea = styled(CardActionArea)({
       backgroundColor: 'rgba(0, 0, 0, 0.2)',
     },
     '& .more-info-button': {
-      display: 'flex',
       opacity: 1,
+      transform: 'translate(-50%, -50%) scale(1)',
     },
   },
   '& .more-info-button': {
-    transition: 'opacity 0.9s ease, transform 1.9s ease',
+    transition: 'opacity 0.9s ease, transform 0.9s ease',
     position: 'absolute', 
     top: '50%', 
     left: '50%', 
-    transform: 'translate(-50%, -50%)', 
-    display: 'block',
+    transform: 'translate(-50%, -50%) scale(0)',
     backgroundColor: 'rgba(0, 0, 0, 0.4)',
     color: 'white',
     padding: '8px 16px',
     borderRadius: '33px',
     textAlign: 'center',
     opacity: 0,
+    display: 'flex', // Always flex, but opacity controls visibility
+    justifyContent: 'center', // Center content inside the box
+    alignItems: 'center'
   }
-});
+}));
 
-export default function ServiceCard({index, service, onClick }) {
+export default function ServiceCard({ service, onClick }) {
   const { title, image, calendly, summary, cardHoverWord } = service;
+  const [isVisible, setIsVisible] = useState(false);
+  const cardRef = useRef(null);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
 
-  return ( 
-    <Card elevation={6} sx={{ maxWidth: 400, position: 'relative' }}> 
-      <StyledCardActionArea  onClick={() => onClick(service)}>
+    if (cardRef.current) {
+      observer.observe(cardRef.current);
+    }
+
+    return () => {
+      if (cardRef.current) {
+        observer.unobserve(cardRef.current);
+      }
+    };
+  }, [cardRef]);
+
+  return (
+    <Card elevation={6} sx={{ maxWidth: 400, position: 'relative' }}>
+      <StyledCardActionArea ref={cardRef} onClick={() => onClick(service)}>
         <CardMedia
           component="img"
-          sx={{
-            height: 'auto', 
-            width: '100%', 
-            objectFit: 'cover', 
-          }}
+          sx={{ height: 'auto', width: '100%', objectFit: 'cover' }}
           image={image}
           alt={title}
         />
@@ -68,7 +88,7 @@ export default function ServiceCard({index, service, onClick }) {
             {summary}
           </Typography>
         </CardContent>
-        <Box className="more-info-button">
+        <Box className="more-info-button" sx={{ opacity: isVisible ? 1 : 0, transform: isVisible ? 'translate(-50%, -50%) scale(1)' : 'translate(-50%, -50%) scale(0)' }}>
           <Typography variant='h3'>{cardHoverWord}</Typography>
         </Box>
       </StyledCardActionArea>
@@ -78,5 +98,5 @@ export default function ServiceCard({index, service, onClick }) {
         </Button>
       </CardActions>
     </Card>
-   );
+  );
 }
