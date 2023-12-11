@@ -20,7 +20,7 @@ import ImageIcon from '../ImageIcon/ImageIcon';
 
 const appBarTitle = "The Celestial Strawberry";
 const drawerWidth = 290;
-const logo = 'Images/logos/tcs_logo.png';
+const logo = './Images/logos/tcs_logo.png';
 
 const logoSize = 56;
 
@@ -30,7 +30,7 @@ const navItems = [
   },{
     title: 'About', link: '/about'
   },{
-    title: 'Services', link: '/#services'
+    title: 'Services', link: '/services'
   }
 ]
   
