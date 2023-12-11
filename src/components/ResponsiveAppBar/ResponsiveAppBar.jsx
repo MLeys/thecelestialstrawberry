@@ -45,7 +45,7 @@ function ResponsiveAppBar({ children }) {
 
   const drawer = (
     <Box bgcolor={theme.palette.primary.light} height={'100%'} onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <ImageIcon size={logoSize * 2} src={logo}/>
+      <ImageIcon size={logoSize * 3} src={logo}/>
       <Typography variant="h4" sx={{ my: 2, fontFamily: 'fantasy', fontWeight: 900 }}> {appBarTitle} </Typography>
       <Divider />
       <List sx={{ mt: 3}}>
@@ -95,7 +95,7 @@ function ResponsiveAppBar({ children }) {
 
           <Typography sx={{ ...appBarTitleStyle, display: { xs: 'flex', sm: 'none' } }}> {appBarTitle} </Typography>
 
-          <ImageIcon size={logoSize} src={logo}/>
+          <ImageIcon size={{xs: logoSize, sm: logoSize+10,  md: logoSize+25, lg: logoSize+35 }} src={logo}/>
 
           <Typography sx={{ ...appBarTitleStyle, display: { xs: 'none', sm: 'flex' }, flexWrap: 'nowrap' }}> {appBarTitle} </Typography>
 
