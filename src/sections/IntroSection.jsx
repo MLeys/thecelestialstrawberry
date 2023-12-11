@@ -26,7 +26,7 @@ export default function IntroSection() {
           </Typography>
         </Grid>
         <Grid xs={12} sx={{ display: 'flex', justifyContent: 'center', m: 'auto'}}>
-          <ImageIcon src="public/Images/symbols/cosmoStar_03.png" size={symbolSize} />
+          <ImageIcon src="Images/symbols/cosmoStar_03.png" size={symbolSize} />
         </Grid>
       </Grid>
     </Paper>

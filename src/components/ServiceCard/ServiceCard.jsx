@@ -30,7 +30,7 @@ const StyledCardActionArea = styled(CardActionArea)(({ theme }) => ({
     },
   },
   '& .more-info-button': {
-    transition: 'opacity 0.9s ease, transform 0.9s ease',
+    transition: 'opacity 0.5s ease, transform 3s ease',
     position: 'absolute', 
     top: '50%', 
     left: '50%', 
