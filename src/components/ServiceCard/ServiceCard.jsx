@@ -57,7 +57,7 @@ export default function ServiceCard({ service, onClick }) {
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.1 }
+      { threshold: 0.5 }
     );
 
     if (cardRef.current) {
