@@ -2,9 +2,13 @@ import * as React from 'react';
 import { useNavigate } from "react-router-dom";
 import { aboutInfo } from '../../assets/aboutInfo';
 
+import { astrologyInfo } from '../../assets/servicesInformation';
+
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
+
+import ServiceDetails from '../../components/ServiceDetails/ServiceDetails';
 
 export default function AboutPage() {
   const navigate = useNavigate();
@@ -40,6 +44,9 @@ export default function AboutPage() {
         <Button variant='contained' color='secondary' onClick={() => navigate('/')}>
           Back to Home
         </Button>
+      </Grid>
+      <Grid xs={12} p={2} pt={1}>
+        <ServiceDetails service={astrologyInfo} />
       </Grid>
     </Grid>
   )
