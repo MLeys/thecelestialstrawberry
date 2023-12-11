@@ -17,7 +17,6 @@ import './config/database.js'
 // Require controllers here
 const app = express();
 
-
 app.set('view engine', 'ejs');
 
 // app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -25,9 +24,6 @@ app.set('view engine', 'ejs');
 app.use(favicon(path.join(__dirname, 'dist', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(express.json()); // sets up our server to recieve JSON requests, this defines req.body for json requests
-
-
-
 
 // api routes must be before the "catch all" route
 import myRoutes from './routes/myRoutes.js';
