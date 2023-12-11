@@ -39,7 +39,6 @@ app.get('/*', function(req, res) {
   res.render(path.join(__dirname, 'dist', 'index.ejs'), {manifest});
 });
 
-
 const { PORT = 8000 } = process.env;
 app.listen(PORT, () => {
   console.log();
