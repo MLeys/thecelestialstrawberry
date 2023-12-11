@@ -32,8 +32,9 @@ const oracleReadingBenefits = [
 
 
 // const rootPath = 'https://thecelestialstrawberry.com/assets/Images/symbols/';
+const rootPath = 'https://raw.githubusercontent.com/TheCelestialStrawberry/thecelestialstrawberry/main/public/assets/Images/symbols/'
 // const rootPath = 'https://raw.githubusercontent.com/TheCelestialStrawberry/thecelestialstrawberry/main/public/assets/Images/symbols/'
-const rootPath ='https://github.com/TheCelestialStrawberry/thecelestialstrawberry/blob/main/public/assets/Images/symbols/'
+// const rootPath ='https://github.com/TheCelestialStrawberry/thecelestialstrawberry/blob/main/public/assets/Images/symbols/'
 
 export const astrologyInfo =    {
   title: 'Hellenistic Astrology',
