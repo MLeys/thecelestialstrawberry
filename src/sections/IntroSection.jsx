@@ -1,7 +1,5 @@
 import React from "react";
-import theme from "../theme";
 
-import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import Paper from '@mui/material/Paper';
