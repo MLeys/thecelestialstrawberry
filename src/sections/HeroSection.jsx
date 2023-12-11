@@ -7,7 +7,6 @@ const heroImage = `${rootPath}/backgrounds/tcs_background_13.png`;
 
 export default function HeroSection() {
   const aspectRatio = 56.25; // padding-top hack to maintain aspect ratio of 16:9
-  console.log(heroImage, "Hero Image Location");
 
   return (
     <Box

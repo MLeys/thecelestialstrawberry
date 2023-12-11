@@ -8,7 +8,6 @@ import Paper from '@mui/material/Paper';
 import ImageIcon from '../ImageIcon/ImageIcon';
 
 export default function ServiceDetails({ service }) {
-  console.log(service.symbol, ' SERVICE DETAILS');
 
   return (
     <Paper elevation={6} sx={{ margin: 4, padding: 3, backgroundColor: 'background.paper' }}> 
