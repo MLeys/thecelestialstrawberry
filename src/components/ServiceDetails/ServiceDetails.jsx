@@ -13,7 +13,10 @@ export default function ServiceDetails({ service }) {
 
       <Grid container spacing={2} >
         <Grid xs={12}>
-          <Typography variant="h4" color="primary.main" display={'flex'} align='center' alignItems={'center'} justifyContent={'flex-start'} gutterBottom>
+          <Typography 
+            variant='h4' color="primary.main" display={'flex'} align='center' alignItems={'center'} justifyContent={'flex-start'} gutterBottom
+            sx={{fontSize: {xs: 'h4.fontSize', sm: 'h3.fontSize', md: 'h2.fontSize', lg: 'h1.fontSize'}}}
+          >
             <ImageIcon src={`${service.symbol}`} size={150} />
              {service.title}
           </Typography>
