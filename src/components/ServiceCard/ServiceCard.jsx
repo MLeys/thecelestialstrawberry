@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import { styled } from '@mui/material/styles';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -9,7 +9,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
-import { styled } from '@mui/material/styles';
 
 const StyledCardActionArea = styled(CardActionArea)({
   position: 'relative',
@@ -35,13 +34,10 @@ const StyledCardActionArea = styled(CardActionArea)({
     left: '50%', 
     transform: 'translate(-50%, -50%)', 
     display: 'block',
-
     backgroundColor: 'rgba(0, 0, 0, 0.4)',
     color: 'white',
     padding: '8px 16px',
     borderRadius: '33px',
-    // padding: '8px 16px',
-    // borderRadius: '4px',
     textAlign: 'center',
     opacity: 0,
   }

@@ -7,9 +7,9 @@ function ImageIcon({ src, size = 24 }) {
       component="img"
       src={src}
       sx={{
-        width: size, // Icon width
-        height: size, // Icon height
-        objectFit: 'cover', // Keeps the image aspect ratio
+        width: size, 
+        height: size, 
+        objectFit: 'cover', 
       }}
     />
   );
