@@ -40,7 +40,7 @@ export default function ServicesSection() {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          flexWrap: 'no-wrap',
+          flexWrap: 'wrap',
           flexGrow: 1,
           maxHeight: '100%',
           maxWidth: '100%', 
@@ -59,8 +59,7 @@ export default function ServicesSection() {
             <ServiceCard  index={index} service={service}  onClick={() => handleServiceClick(service)} />
           </Grid>
         ))}
-        <Grid>
-        </Grid>
+
       </Grid>
       <Box ref={serviceDetailsRef} mb={5}>
         <ServiceDetails service={activeService} />

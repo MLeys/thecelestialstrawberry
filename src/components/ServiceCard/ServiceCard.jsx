@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-
+import theme from '../../theme';
 
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -84,7 +84,7 @@ export default function ServiceCard({ service, onClick }) {
           <Typography gutterBottom variant='h5' component={'div'}>
             {title}
           </Typography>
-          <Typography variant='body2' color={'heroPurple.dark'}>
+          <Typography variant='body1' color={'heroPurple.dark'}>
             {summary}
           </Typography>
         </CardContent>
@@ -93,7 +93,7 @@ export default function ServiceCard({ service, onClick }) {
         </Box>
       </StyledCardActionArea>
       <CardActions>
-        <Button size="small" color="primary" href={calendly} target='_blank'>
+        <Button size="small" variant='contained' color="primary" href={calendly} target='_blank'>
           Book Now!
         </Button>
       </CardActions>
