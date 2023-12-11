@@ -80,7 +80,7 @@ function ResponsiveAppBar({ children }) {
   };
 
   return (
-    <Box  sx={{ mt: { xs: 5.5, sm: 8, md: 13 } }} >
+    <Box  sx={{ mt: { xs: 8, sm: 8, md: 13 } }} >
       <CssBaseline />
       <AppBar component="nav">
         <Toolbar>
@@ -95,8 +95,10 @@ function ResponsiveAppBar({ children }) {
           </IconButton>
 
           <Typography sx={{ ...appBarTitleStyle, display: { xs: 'flex', sm: 'none' } }}> {appBarTitle} </Typography>
+          <Button onClick={() => navigate('/')}>
+            <ImageIcon size={{xs: logoSize, sm: logoSize+10,  md: logoSize+25, lg: logoSize+50 }} src={logo}/>
 
-          <ImageIcon size={{xs: logoSize, sm: logoSize+10,  md: logoSize+25, lg: logoSize+50 }} src={logo}/>
+          </Button>
 
           <Typography sx={{ ...appBarTitleStyle, display: { xs: 'none', sm: 'flex' }, flexWrap: 'nowrap' }}> {appBarTitle} </Typography>
 

@@ -40,7 +40,7 @@ export default function ServicesSection() {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          flexWrap: 'wrap',
+          flexWrap: 'no-wrap',
           flexGrow: 1,
           maxHeight: '100%',
           maxWidth: '100%', 
@@ -55,7 +55,7 @@ export default function ServicesSection() {
         }}
       >
         {servicesInfo.map((service, index) => (
-          <Grid key={crypto.randomUUID()} xs={12} sm={5} md={3} >
+          <Grid key={crypto.randomUUID()} xs={12} sm={5} md={3} display={'flex'} mr={1} justifyContent={'center'}>
             <ServiceCard  index={index} service={service}  onClick={() => handleServiceClick(service)} />
           </Grid>
         ))}
