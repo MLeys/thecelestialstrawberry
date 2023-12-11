@@ -5,7 +5,7 @@ function ImageIcon({ src, size = 24 }) {
   return (
     <Box
       component="img"
-      src={src}
+      src={require(`../../../assets/${selectedIcon }`).default}
       sx={{
         width: size, 
         height: size, 

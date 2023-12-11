@@ -5,16 +5,14 @@ import Box from '@mui/material/Box';
 
 import FloatingActionButton from '../FloatingActionButton/FloatingActionButton';
 
-import facebookImport from '../../assets/logos/facebook.png';
-import instagramImport from '../../Images/logos/instagram.png';
 
 const iconSize = 32;
 const transitionTime = '0.3s'; 
 const scale = '1.5';
 
-const facebookLogo = `${facebookImport}/?raw=true`;
-const instragramLogo =`${instagramImport}/?raw=true`;
-const tiktokLogo = './thecelestialstrawberry/Images/logos/tiktok.png';
+const facebookLogo = `Images/logos/facebook.png/?raw=true`;
+const instragramLogo =`Images/logos/facebook.png?raw=true`;
+const tiktokLogo = './Images/logos/tiktok.png';
 
 const facebookLink = 'https://www.facebook.com/thecelestialstrawberry';
 const instagramLink = 'https://www.instagram.com/thecelestialstrawberry';
