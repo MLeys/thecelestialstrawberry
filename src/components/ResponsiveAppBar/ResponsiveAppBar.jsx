@@ -95,7 +95,7 @@ function ResponsiveAppBar({ children }) {
 
           <Typography sx={{ ...appBarTitleStyle, display: { xs: 'flex', sm: 'none' } }}> {appBarTitle} </Typography>
 
-          <ImageIcon size={{xs: logoSize, sm: logoSize+10,  md: logoSize+25, lg: logoSize+35 }} src={logo}/>
+          <ImageIcon size={{xs: logoSize, sm: logoSize+10,  md: logoSize+25, lg: logoSize+50 }} src={logo}/>
 
           <Typography sx={{ ...appBarTitleStyle, display: { xs: 'none', sm: 'flex' }, flexWrap: 'nowrap' }}> {appBarTitle} </Typography>
 
