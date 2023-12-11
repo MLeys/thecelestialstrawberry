@@ -30,11 +30,11 @@ const oracleReadingBenefits = [
   { name: 'Daily Inspiration', description: 'Serves as a source of daily guidance and positive affirmation.' }
 ];
 
-const astrologyInfo =    {
+export const astrologyInfo =    {
   title: 'Hellenistic Astrology',
-  image: '',
+  image: 'Images/symbols/oracleReading_09.png',
   calendly: '',
-  symbol: '',
+  symbol: 'Images/symbols/planetaryOrbit_03.png',
   summary: 'Ancient astrology combining Babylonian, Egyptian, and Greek traditions, focusing on character and destiny through celestial influences.',
   overview: 'Hellenistic astrology emerged in the Mediterranean around the 1st century BCE, combining astrological traditions of Babylon, Egypt, and Greece. It is foundational for many modern practices and includes techniques like aspects, planetary periods, and uses the seven traditional planets.',
   purpose: 'Its purpose is to gain insight into an individual\'s character and destiny, influenced by celestial bodies. It provides guidance for personal growth, understanding life events, and future decision-making.',
@@ -47,7 +47,7 @@ const astrologyInfo =    {
   ]
 };
 
-const servicesInfo = [
+export const servicesInfo = [
   {
     title: 'Tarot Readings',
     image: 'Images/symbols/tarotReading_08.png',
