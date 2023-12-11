@@ -35,7 +35,7 @@ const navItems = [
 
 function ResponsiveAppBar({ children }) {
   const navigate = useNavigate();
-  
+
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -74,7 +74,7 @@ function ResponsiveAppBar({ children }) {
   };
 
   return (
-    <Box  sx={{ mt: { xs: 5.5, sm: 8, md: 10 } }} >
+    <Box  sx={{ mt: { xs: 5.5, sm: 8, md: 13 } }} >
       <CssBaseline />
       <AppBar component="nav">
         <Toolbar>
