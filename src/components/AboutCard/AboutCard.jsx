@@ -62,9 +62,6 @@ export default function AboutCard() {
   const greeting = aboutInfo.find(item => item.part === 'greeting')?.text;
   const introduction = aboutInfo.find(item => item.part === 'introduction')?.text;
   const body1 = aboutInfo.find(item => item.part === 'body1')?.text;
-  const body2 = aboutInfo.find(item => item.part === 'body2')?.text;
-  const signature = aboutInfo.find(item => item.part === 'signature')?.text;
-
 
   return (
     <Paper elevation={1} sx={{ marginX: 4, marginY: 15 }}> 

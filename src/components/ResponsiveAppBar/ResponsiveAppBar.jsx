@@ -45,7 +45,6 @@ function ResponsiveAppBar({ children }) {
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <ImageIcon size={logoSize} src={logo}/>
       <Typography variant="h6" sx={{ my: 2, fontFamily: 'fantasy' }}> {appBarTitle} </Typography>
-      
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -59,10 +58,7 @@ function ResponsiveAppBar({ children }) {
     </Box>
   );
 
-  const menuItemFontSizes = {
-    fontSize: { xs: '1rem', md:'1.3rem' },
-  }
-
+  const menuItemFontSizes = {fontSize: { xs: '1rem', md:'1.3rem' } }
  
   const appBarTitleStyle = { 
     flexGrow: 1, 
@@ -74,7 +70,6 @@ function ResponsiveAppBar({ children }) {
     mx: { xs: 0, md: 1.5 },
     px: { xs: 1, md: 2.5 },
     justifyContent: 'center',
-     
   };
 
   return (
@@ -91,17 +86,12 @@ function ResponsiveAppBar({ children }) {
           >
             =
           </IconButton>
-          
-          <Typography sx={{ ...appBarTitleStyle, display: { xs: 'flex', sm: 'none' } }} >
-            {appBarTitle}
-          </Typography>
 
-          <Box sx={{}} >
-            <ImageIcon size={logoSize} src={logo}/>
-          </Box>
-          <Typography sx={{ ...appBarTitleStyle, display: { xs: 'none', sm: 'flex' }, flexWrap: 'nowrap' }}>
-            {appBarTitle}
-          </Typography>
+          <Typography sx={{ ...appBarTitleStyle, display: { xs: 'flex', sm: 'none' } }}> {appBarTitle} </Typography>
+
+          <ImageIcon size={logoSize} src={logo}/>
+
+          <Typography sx={{ ...appBarTitleStyle, display: { xs: 'none', sm: 'flex' }, flexWrap: 'nowrap' }}> {appBarTitle} </Typography>
 
           <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
             {navItems.map(item => (
@@ -123,7 +113,7 @@ function ResponsiveAppBar({ children }) {
         open={mobileOpen}
         onClose={handleDrawerToggle}
         ModalProps={{
-          keepMounted: true, // Better open performance on mobile.
+          keepMounted: true, 
         }}
         sx={{
           display: { xs: 'block', sm: 'none' },
@@ -133,8 +123,7 @@ function ResponsiveAppBar({ children }) {
         {drawer}
       </Drawer>
 
-        {children}
-
+      {children}
     </Box>
   );
 }

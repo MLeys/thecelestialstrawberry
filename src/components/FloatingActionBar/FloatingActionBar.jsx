@@ -3,7 +3,6 @@ import theme from '../../theme';
 
 import Box from '@mui/material/Box';
 
-import { FacebookIcon, InstagramIcon, TikTokIcon } from '../../assets/icons';
 import FloatingActionButton from '../FloatingActionButton/FloatingActionButton';
 
 export default function FloatingActionBar() {
@@ -15,12 +14,9 @@ export default function FloatingActionBar() {
   const transitionTime = '0.3s'; 
   const scale = '1.5';
 
-
   const facebookLogo = 'Images/logos/facebook.png';
   const instragramLogo ='Images/logos/instagram.png';
   const tiktokLogo = 'Images/logos/tiktok.png';
-
-
 
   return (
     <Box sx={{
@@ -38,7 +34,6 @@ export default function FloatingActionBar() {
       <FloatingActionButton 
         img={facebookLogo} time={transitionTime} scale={scale} size={iconSize}
         onClick={() => handleIconClick('https://www.facebook.com/thecelestialstrawberry')}
-      
       />
       <FloatingActionButton 
         img={instragramLogo} time={transitionTime} scale={scale} size={iconSize}

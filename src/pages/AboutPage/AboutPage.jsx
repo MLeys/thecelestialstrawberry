@@ -1,7 +1,5 @@
 import * as React from 'react';
 import { useNavigate } from "react-router-dom";
-
-import theme from '../../theme';
 import { aboutInfo } from '../../assets/aboutInfo';
 
 import Button from '@mui/material/Button';
