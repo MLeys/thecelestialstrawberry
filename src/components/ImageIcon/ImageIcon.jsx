@@ -5,7 +5,7 @@ import { rootPath } from '../../../public/assets/rootPath';
 
 
 function ImageIcon({ src, size = 24 }) {
-  const imageLocation = `${rootPath}/symbols/${src}`;
+  const imageLocation = `${rootPath}${src}`;
   console.log(imageLocation, "Icon Image Location");
 
   return (

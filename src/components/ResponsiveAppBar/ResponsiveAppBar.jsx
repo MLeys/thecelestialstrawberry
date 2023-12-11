@@ -20,7 +20,7 @@ import ImageIcon from '../ImageIcon/ImageIcon';
 
 const appBarTitle = "The Celestial Strawberry";
 const drawerWidth = 290;
-const logo = 'thecelestialstrawberry/Images/logos/tcs_logo.png';
+const logo = 'logos/tcs_logo.png';
 
 const logoSize = 56;
 

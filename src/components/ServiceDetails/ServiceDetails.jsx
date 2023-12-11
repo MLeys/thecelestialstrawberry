@@ -9,6 +9,7 @@ import ImageIcon from '../ImageIcon/ImageIcon';
 
 export default function ServiceDetails({ service }) {
   console.log(service.symbol, ' SERVICE DETAILS');
+
   return (
     <Paper elevation={6} sx={{ margin: 4, padding: 3, backgroundColor: 'background.paper' }}> 
 
@@ -18,7 +19,7 @@ export default function ServiceDetails({ service }) {
             variant='h4' color="primary.main" display={'flex'} align='center' alignItems={'center'} justifyContent={'flex-start'} gutterBottom
             sx={{fontSize: {xs: 'h4.fontSize', sm: 'h3.fontSize', md: 'h2.fontSize', lg: 'h1.fontSize'}}}
           >
-            <ImageIcon src={service.symbol} size={150} />
+            <ImageIcon src={`symbols/${service.symbol}`} size={150} />
              {service.title}
           </Typography>
         </Grid>

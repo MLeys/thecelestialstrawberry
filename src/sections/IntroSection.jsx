@@ -6,8 +6,8 @@ import Paper from '@mui/material/Paper';
 
 import ImageIcon from "../components/ImageIcon/ImageIcon";
 
-const symbol1 = 'zodiacWheel_02.png';
-const symbol2 = 'cosmoStar_03.png';
+const symbol1 = 'symbols/zodiacWheel_02.png';
+const symbol2 = 'symbols/cosmoStar_03.png';
 
 const symbolSize = 150;
 

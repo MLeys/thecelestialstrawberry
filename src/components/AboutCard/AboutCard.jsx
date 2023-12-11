@@ -9,9 +9,9 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import Paper from '@mui/material/Paper';
+import { rootPath } from '../../../public/assets/rootPath';
 
-
-const avatar = "/Images/avatarLaura.jpg";
+const avatar = `${rootPath}/avatarLaura.jpg`;
 const name = "Laura Yeomens";
 const title = "Hellenistic Astrologer";
 

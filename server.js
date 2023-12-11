@@ -32,10 +32,7 @@ app.use(express.json()); // sets up our server to recieve JSON requests, this de
 // api routes must be before the "catch all" route
 import myRoutes from './routes/myRoutes.js';
 
-
 app.use('/api', myRoutes)
-
-
 
 app.use(express.static(path.join(__dirname, "dist")));
 

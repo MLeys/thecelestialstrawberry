@@ -3,7 +3,7 @@ import Fab from '@mui/material/Fab';
 
 import ImageIcon from '../ImageIcon/ImageIcon';
 
-export default function FloatingActionButton({ icon, time='0.5', scale='1.25', size=100, img='Images/symbols/cosmoStar_03.png', onClick }) {
+export default function FloatingActionButton({ icon, time='0.5', scale='1.25', size=100, img='cosmoStar_03.png', onClick }) {
   const transitionStyle = {
     backgroundColor: 'transparent',
     boxShadow: 'none', 
