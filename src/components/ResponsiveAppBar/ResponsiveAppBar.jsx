@@ -35,6 +35,7 @@ const navItems = [
 
 function ResponsiveAppBar({ children }) {
   const navigate = useNavigate();
+  
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
