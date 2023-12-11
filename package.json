@@ -10,7 +10,7 @@
     "start": "node server.js",
     "client": "vite",
     "server": "nodemon server.js",
-    "deploy": "npm run build && gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
   "dependencies": {
