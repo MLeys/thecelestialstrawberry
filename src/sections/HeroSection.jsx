@@ -2,7 +2,7 @@ import React from "react";
 
 import Box from '@mui/material/Box';
 
-const heroImage = 'Images/backgrounds/tcs_background_13.png'
+const heroImage = 'assets/Images/backgrounds/heroBackground.png'
 
 export default function HeroSection() {
   const aspectRatio = 56.25; // padding-top hack to maintain aspect ratio of 16:9

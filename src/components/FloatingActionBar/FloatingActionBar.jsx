@@ -11,7 +11,7 @@ const iconSize = 32;
 const transitionTime = '0.3s'; 
 const scale = '1.5';
 
-const facebookLogo = `Images/logos/facebook.png/?raw=true`;
+const facebookLogo = `Images/logos/facebook.png`;
 const instragramLogo =`Images/logos/facebook.png?raw=true`;
 const tiktokLogo = './Images/logos/tiktok.png';
 

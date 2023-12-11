@@ -58,7 +58,6 @@ function ProfilePic({name, avatar, title}) {
 
 export default function AboutCard() {
   const navigate = useNavigate();
-  
 
   const greeting = aboutInfo.find(item => item.part === 'greeting')?.text;
   const introduction = aboutInfo.find(item => item.part === 'introduction')?.text;
