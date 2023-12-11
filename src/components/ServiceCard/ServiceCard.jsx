@@ -10,7 +10,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
-import useMediaQuery from '@mui/material/useMediaQuery';
+
 
 const StyledCardActionArea = styled(CardActionArea)(({ theme }) => ({
   position: 'relative',
