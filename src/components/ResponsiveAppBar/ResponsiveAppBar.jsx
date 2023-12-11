@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { useNavigate } from "react-router-dom";
+import theme from '../../theme';
 
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -43,15 +44,19 @@ function ResponsiveAppBar({ children }) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <ImageIcon size={logoSize} src={logo}/>
-      <Typography variant="h6" sx={{ my: 2, fontFamily: 'fantasy' }}> {appBarTitle} </Typography>
+    <Box bgcolor={theme.palette.primary.light} height={'100%'} onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+      <ImageIcon size={logoSize * 2} src={logo}/>
+      <Typography variant="h4" sx={{ my: 2, fontFamily: 'fantasy', fontWeight: 900 }}> {appBarTitle} </Typography>
       <Divider />
-      <List>
+      <List sx={{ mt: 3}}>
         {navItems.map((item) => (
-          <ListItem key={item.title} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }} onClick={() => navigate(item.link)}>
-              <ListItemText primary={item.title} />
+          <ListItem key={item.title} disablePadding  >
+            <ListItemButton sx={{ textAlign: 'center'}} onClick={() => navigate(item.link)}>
+              <ListItemText  >
+                <Typography variant='h5' sx={{backgroundColor: theme.palette.secondary.main, borderRadius: '10px', p: 2}} >
+                  {item.title}
+                </Typography>
+              </ListItemText>
             </ListItemButton>
           </ListItem>
         ))}
