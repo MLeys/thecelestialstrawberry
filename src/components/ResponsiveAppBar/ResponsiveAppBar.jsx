@@ -15,8 +15,12 @@ import ListItemText from '@mui/material/ListItemText';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import ImageIcon from '../ImageIcon/ImageIcon';
 
-const drawerWidth = 240;
+const appBarTitle = "The Celestial Strawberry";
+const drawerWidth = 290;
+const logo = '/Images/logos/tcs_logo.png';
+const logoSize = 56;
 
 const navItems = [
   {
@@ -24,7 +28,7 @@ const navItems = [
   },{
     title: 'About', link: '/about'
   },{
-    title: 'Services', link: '/services'
+    title: 'Services', link: '/#services'
   }
 ]
   
@@ -39,9 +43,9 @@ function ResponsiveAppBar({ children }) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2, fontFamily: 'fantasy' }}>
-        The Celestial Strawberry
-      </Typography>
+      <ImageIcon size={logoSize} src={logo}/>
+      <Typography variant="h6" sx={{ my: 2, fontFamily: 'fantasy' }}> {appBarTitle} </Typography>
+      
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -56,20 +60,25 @@ function ResponsiveAppBar({ children }) {
   );
 
   const menuItemFontSizes = {
-    fontSize: { xs: '1rem', md:'1.25rem' },
+    fontSize: { xs: '1rem', md:'1.3rem' },
   }
 
-  const appBarTitle = "The Celestial Strawberry";
+ 
   const appBarTitleStyle = { 
     flexGrow: 1, 
-    letterSpacing: '0.1rem', 
+    letterSpacing: { xs: '0rem', md:'0.1rem' },
     fontFamily: 'fantasy',
-    fontSize: { xs: '1.5rem', sm: '1.75rem', md: '2rem' },
-    py: { xs: 1, sm: 2, md: 2.5 }
+    fontSize: { xs: '1.6rem', md: '2.5rem' },
+    my: { xs: 0, sm: 1, md: 1.5 },
+    py: { xs: 1, sm: 1, md: 2 },
+    mx: { xs: 0, md: 1.5 },
+    px: { xs: 1, md: 2.5 },
+    justifyContent: 'center',
+     
   };
 
   return (
-    <Box sx={{ mt: { xs: 5.5, sm: 8, md: 10 } }} >
+    <Box  sx={{ mt: { xs: 5.5, sm: 8, md: 10 } }} >
       <CssBaseline />
       <AppBar component="nav">
         <Toolbar>
@@ -82,16 +91,15 @@ function ResponsiveAppBar({ children }) {
           >
             =
           </IconButton>
-          {/* AppBar Title for mobile and desktop */}
-          <Typography
-            component="div"
-            sx={{ ...appBarTitleStyle, display: { xs: 'flex', sm: 'none' }, justifyContent: 'center' }} >
+          
+          <Typography sx={{ ...appBarTitleStyle, display: { xs: 'flex', sm: 'none' } }} >
             {appBarTitle}
           </Typography>
-          <Typography
-            component="div"
-            sx={{ ...appBarTitleStyle, display: { xs: 'none', sm: 'flex' }, flexWrap: 'nowrap' }}
-          >
+
+          <Box sx={{}} >
+            <ImageIcon size={logoSize} src={logo}/>
+          </Box>
+          <Typography sx={{ ...appBarTitleStyle, display: { xs: 'none', sm: 'flex' }, flexWrap: 'nowrap' }}>
             {appBarTitle}
           </Typography>
 

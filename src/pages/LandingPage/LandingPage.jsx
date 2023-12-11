@@ -24,7 +24,7 @@ function LandingPage() {
       <HeroSection />
       <IntroSection />
       <AboutCard />
-      <ServicesSection id='services'/>
+      <ServicesSection />
       {/* <ProductsSection /> */}
       
 

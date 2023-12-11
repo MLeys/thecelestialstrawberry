@@ -19,8 +19,8 @@ export default function AboutPage() {
 
 
   return (
-    <Grid container my={4} display={'flex'} justifyContent={'center'} >
-      <Grid xs={10} sm={8} md={4}>
+    <Grid container my={{xs: 6, md: 8}} display={'flex'} justifyContent={'center'} >
+      <Grid xs={10} sm={6} md={4}>
         <img src='/Images/avatarLaura.jpg' style={{  width:'100%' }}/>
       </Grid>
       <Grid xs={10} sm={8} md={8} p={2} pt={1}>

@@ -41,7 +41,7 @@ export default function ServicesSection() {
   return (
     <>
     <Grid
-      id='services-section'
+      id='services'
       component={'section'}
       container
       sx={{

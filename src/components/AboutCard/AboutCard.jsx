@@ -38,7 +38,6 @@ function ProfilePic({name, avatar, title}) {
       }}
     >
       <Typography 
-        // display={{xs: 'none', sm: 'block'}}
         variant='h6' 
         color={theme.palette.primary.contrastText} 
         fontWeight={800}
@@ -69,7 +68,6 @@ export default function AboutCard() {
 
   return (
     <Paper elevation={1} sx={{ marginX: 4, marginY: 15 }}> 
-
       <Grid container my={4} py={2} display={'flex'} justifyContent={'center'} >
         <Grid xs={8} sm={4} minHeight={'50dvh'} >
           <ProfilePic name={name} avatar={avatar} title={title}/>
