@@ -1,6 +1,6 @@
 Terms of Service for The Celestial Strawberry
 
-Last Updated: [Date]
+Last Updated: 12/11/23
 
 1. Acceptance of Terms
 
