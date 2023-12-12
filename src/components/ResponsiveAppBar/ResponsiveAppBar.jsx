@@ -71,7 +71,7 @@ function ResponsiveAppBar({ children }) {
     flexGrow: 1, 
     letterSpacing: { xs: '0rem', md:'0.1rem' },
     fontFamily: 'fantasy',
-    fontSize: { xs: '1.6rem', md: '2.5rem' },
+    fontSize: { xs: '1rem', sm: '1.5rem', md: '2.5rem' },
     my: { xs: 0, sm: 1, md: 1.5 },
     py: { xs: 1, sm: 1, md: 2 },
     mx: { xs: 0, md: 1.5 },
