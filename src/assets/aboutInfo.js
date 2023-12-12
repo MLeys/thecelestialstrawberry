@@ -22,6 +22,6 @@ export const aboutInfo = [
     of celestial whimsy as we embark on a journey to unlock the secrets of your cosmic destiny.`
   },{ 
     part: 'signature',
-    text: `- Laura Yeomens - Hellenistic Astrologer`
-  },
+    text: `- Laura Yeomans - Hellenistic Astrologer`
+  }
 ]

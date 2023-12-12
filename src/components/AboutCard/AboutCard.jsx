@@ -12,7 +12,7 @@ import Paper from '@mui/material/Paper';
 import { rootPath } from '../../../public/assets/rootPath';
 
 const avatar = `${rootPath}/avatarLaura.jpg`;
-const name = "Laura Yeomens";
+const name = "Laura Yeomans";
 const title = "Hellenistic Astrologer";
 
 
