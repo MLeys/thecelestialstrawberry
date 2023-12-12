@@ -71,9 +71,9 @@ function ResponsiveAppBar({ children }) {
     flexGrow: 1, 
     letterSpacing: { xs: '0rem', md:'0.1rem' },
     fontFamily: 'fantasy',
-    fontSize: { xs: '1rem', sm: '1.5rem', md: '2.5rem' },
-    my: { xs: 0, sm: 1, md: 1.5 },
-    py: { xs: 1, sm: 1, md: 2 },
+    fontSize: { xs: '0.6rem', sm: '1.5rem', md: '2.5rem' },
+    my: { xs: 1, sm: 2, md: 1.5 },
+    py: { xs: 2, sm: 2, md: 4 },
     mx: { xs: 0, md: 1.5 },
     px: { xs: 1, md: 2.5 },
     justifyContent: 'center',
@@ -89,13 +89,13 @@ function ResponsiveAppBar({ children }) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 0, display: { sm: 'none' } }}
           >
             =
           </IconButton>
 
           <Typography sx={{ ...appBarTitleStyle, display: { xs: 'flex', sm: 'none' } }}> {appBarTitle} </Typography>
-          <Button onClick={() => navigate('/')}>
+          <Button sx={{m: 0, p: 0}} onClick={() => navigate('/')} >
             <ImageIcon size={{xs: logoSize, sm: logoSize+10,  md: logoSize+25, lg: logoSize+50 }} src={logo}/>
 
           </Button>
