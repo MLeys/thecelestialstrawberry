@@ -1,6 +1,6 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import { rootPath } from '../../../public/assets/rootPath';
+import { rootPath } from '../../assets/rootPath';
 
 
 
