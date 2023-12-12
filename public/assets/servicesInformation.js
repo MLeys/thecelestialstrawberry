@@ -40,7 +40,7 @@ export const servicesInfo = [
   },{
     title: 'Birth Chart Readings',
     image: `${root}brithChartReading_07.png`,
-    calendly: 'https://calendly.com/thecelestialstrawberry/tarot-reading',
+    calendly: 'https://calendly.com/thecelestialstrawberry/birth-chart-reading',
     symbol: `brithChartReading_01.png`,
     summary: 'Astrological analysis based on the planetary positions at one\'s birth, providing deep personal insights and life path guidance.',
     overview: 'Birth chart readings analyze an astrological chart for the exact time, date, and location of someone\'s birth. This practice maps planetary positions and astrological houses, offering a unique insight into personality and life journey.',
