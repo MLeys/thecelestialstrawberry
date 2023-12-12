@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useNavigate, useLocation } from "react-router-dom";
-
+import { rootPath } from '../../assets/rootPath';
 import { aboutInfo } from '../../assets/aboutInfo';
 import theme from '../../theme';
 
@@ -9,7 +9,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import Paper from '@mui/material/Paper';
-import { rootPath } from '../../../public/assets/rootPath';
+
 
 const avatar = `${rootPath}/avatarLaura.jpg`;
 const name = "Laura Yeomens";
