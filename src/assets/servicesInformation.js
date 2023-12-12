@@ -40,7 +40,7 @@ export const servicesInfo = [
   },{
     title: 'Birth Chart Readings',
     image: `${root}brithChartReading_07.png`,
-    calendly: 'https://calendly.com/mleys/service-2',
+    calendly: 'https://calendly.com/thecelestialstrawberry/birth-chart-reading',
     symbol: `brithChartReading_01.png`,
     summary: 'Astrological analysis based on the planetary positions at one\'s birth, providing deep personal insights and life path guidance.',
     overview: 'Birth chart readings analyze an astrological chart for the exact time, date, and location of someone\'s birth. This practice maps planetary positions and astrological houses, offering a unique insight into personality and life journey.',
@@ -56,7 +56,7 @@ export const servicesInfo = [
   },{
     title: 'Oracle Readings', 
     image: `${root}oracleReading_05.png`,
-    calendly: 'https://calendly.com/mleys/teststripe',
+    calendly: 'https://calendly.com/thecelestialstrawberry/oracle-reading',
     symbol: `naturalHealing_02e.png`,
     summary: 'Spiritual guidance using unique oracle cards, each carrying specific uplifting messages and insights for personal enlightenment.',
     overview: 'Oracle readings use unique oracle cards for divination, differing from tarot cards. Modern oracle cards, popularized in the late 20th century, vary in theme and number, each carrying specific messages or insights.',
