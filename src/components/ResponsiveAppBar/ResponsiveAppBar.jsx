@@ -71,16 +71,16 @@ function ResponsiveAppBar({ children }) {
     flexGrow: 1, 
     letterSpacing: { xs: '0rem', md:'0.1rem' },
     fontFamily: 'fantasy',
-    fontSize: { xs: '0.6rem', sm: '1.5rem', md: '2.5rem' },
-    my: { xs: 1, sm: 2, md: 1.5 },
+    fontSize: { xs: '0.9rem', sm: '1.5rem', md: '2.5rem' },
+    my: { xs: 2, sm: 2, md: 1.5 },
     py: { xs: 2, sm: 2, md: 4 },
     mx: { xs: 0, md: 1.5 },
-    px: { xs: 1, md: 2.5 },
+    px: { xs: 0, md: 2.5 },
     justifyContent: 'center',
   };
 
   return (
-    <Box  sx={{ mt: { xs: 8, sm: 8, md: 13 } }} >
+    <Box  sx={{ mt: { xs: 7, sm: 8, md: 13 } }} >
       <CssBaseline />
       <AppBar component="nav">
         <Toolbar>
