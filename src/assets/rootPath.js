@@ -1,3 +1,3 @@
-export const rootPath = 'https://raw.githubusercontent.com/TheCelestialStrawberry/thecelestialstrawberry/gh-pages/public/Images/';
+export const rootPath =     'https://raw.githubusercontent.com/TheCelestialStrawberry/thecelestialstrawberry/gh-pages/Images/';
 
-export const mainRootPath = 'https://raw.githubusercontent.com/TheCelestialStrawberry/thecelestialstrawberry/gh-pages/public/assets/';
+export const mainRootPath = 'https://raw.githubusercontent.com/TheCelestialStrawberry/thecelestialstrawberry/gh-pages/public/';
