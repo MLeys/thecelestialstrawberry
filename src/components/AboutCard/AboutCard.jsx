@@ -2,7 +2,6 @@ import * as React from 'react';
 import { useNavigate, useLocation } from "react-router-dom";
 import { rootPath } from '../../assets/rootPath';
 import { aboutInfo } from '../../assets/aboutInfo';
-import { rootPath } from '../../../public/assets/rootPath';
 
 import theme from '../../theme';
 
