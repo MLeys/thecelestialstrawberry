@@ -7,7 +7,7 @@ import Paper from '@mui/material/Paper';
 
 import ImageIcon from '../ImageIcon/ImageIcon';
 
-export default function ServiceDetails({ service }) {
+export default function ServiceDetails({ service, children}) {
 
   return (
     <Paper elevation={6} sx={{ margin: 4, padding: 3, backgroundColor: 'background.paper' }}> 
@@ -45,6 +45,7 @@ export default function ServiceDetails({ service }) {
 
         </Grid>
       </Grid>
+      {children}
     </Paper>
   );
 };
