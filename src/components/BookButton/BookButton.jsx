@@ -18,7 +18,7 @@ export default function BookButton({ text='Book Now!', fontSize='1rem', width='1
             fontSize: fontSize,
             fontWeight: 'bold',
             borderRadius: 10,
-            boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
+            boxShadow: '0px 5px 20px 0px rgba(0,0,0,0.75)',
             border: 'none',
 
             backgroundColor: theme.palette.secondary.dark,
