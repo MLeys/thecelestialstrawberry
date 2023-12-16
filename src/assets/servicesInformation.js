@@ -22,7 +22,7 @@ export const astrologyInfo =    {
 
 export const servicesInfo = [
   {
-    title: 'Tarot Readings',
+    title: 'Tarot Reading',
     image: `${root}tarotReading_08.png`,
     calendly: 'https://calendly.com/thecelestialstrawberry/tarot-reading',
     symbol: `tarotReading_07.png`,
@@ -38,7 +38,7 @@ export const servicesInfo = [
       { name: 'Emotional Clarity', description: 'Clarifies emotional responses and personal relationships.' }
     ]
   },{
-    title: 'Birth Chart Readings',
+    title: 'Birth Chart Reading',
     image: `${root}brithChartReading_07.png`,
     calendly: 'https://calendly.com/thecelestialstrawberry/birth-chart-reading',
     symbol: `brithChartReading_01.png`,
@@ -54,7 +54,7 @@ export const servicesInfo = [
       { name: 'Career Guidance', description: 'Can guide career choices and professional growth based on personal traits.' }
     ]
   },{
-    title: 'Oracle Readings', 
+    title: 'Oracle Reading', 
     image: `${root}oracleReading_05.png`,
     calendly: 'https://calendly.com/thecelestialstrawberry/oracle-reading',
     symbol: `naturalHealing_02e.png`,
