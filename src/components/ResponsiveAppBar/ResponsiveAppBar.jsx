@@ -65,15 +65,18 @@ function ResponsiveAppBar({ children }) {
     </Box>
   );
 
-  const menuItemFontSizes = {fontSize: { xs: '1rem', md:'1.3rem' } }
+  const menuItemFontSizes = {fontSize: { xs: '1rem', md:'1.4rem' } }
  
   const appBarTitleStyle = { 
+    display: 'flex',
     flexGrow: 1, 
+    flexWrap: 'nowrap',
+
     letterSpacing: { xs: '0rem', md:'0.1rem' },
     fontFamily: 'fantasy',
-    fontSize: { xs: '0.9rem', sm: '1.5rem', md: '2.5rem' },
+    fontSize: { xs: '2rem', sm: '2rem', md: '2.5rem' },
     my: { xs: 2, sm: 2, md: 1.5 },
-    py: { xs: 2, sm: 2, md: 4 },
+    py: { xs: 1, sm: 1, md: 2 },
     mx: { xs: 0, md: 1.5 },
     px: { xs: 0, md: 2.5 },
     justifyContent: 'center',
