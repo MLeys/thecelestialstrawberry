@@ -12,7 +12,7 @@ export default function ServicesSection() {
   const [activeService, setActiveService] = useState(servicesInfo[0]); 
   const serviceDetailsRef = useRef(null);
 
-  function  handleServiceClick(service) {
+  function handleServiceClick(service) {
     setActiveService(service);
     const element = serviceDetailsRef.current;
   
@@ -39,18 +39,12 @@ export default function ServicesSection() {
         sx={{
           display: 'flex',
           justifyContent: 'center',
-          alignItems: 'center',
-          flexWrap: 'no-wrap',
           flexGrow: 1,
-          maxHeight: '100%',
-          maxWidth: '100%', 
-          gap: 2,
-          margin: '0 auto',
+          flexWrap: 'wrap',
+          gap: 3,
           paddingY: 9,
           paddingX: 2,
-          position: 'relative',
-          backgroundSize: 'cover',
-          backgroundImage: `url(${'https://imgur.com/Y60JE8H.png'})`,
+          backgroundImage: 'url(https://imgur.com/Y60JE8H.png)',
           backgroundPosition: 'center',
         }}
       >
