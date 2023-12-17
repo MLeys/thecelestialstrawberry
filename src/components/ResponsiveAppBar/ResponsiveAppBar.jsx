@@ -85,8 +85,8 @@ function ResponsiveAppBar({ children }) {
   return (
     <Box  sx={{ mt: { xs: 7, sm: 8, md: 13 } }} >
       <CssBaseline />
-      <AppBar component="nav">
-        <Toolbar>
+      <AppBar component="nav" sx={{ mb: 3 }}>
+        <Toolbar sx={{ justifyContent: 'space-between' }}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -97,13 +97,13 @@ function ResponsiveAppBar({ children }) {
             =
           </IconButton>
 
-          <Typography sx={{ ...appBarTitleStyle, display: { xs: 'flex', sm: 'none' } }}> {appBarTitle} </Typography>
+          <Typography sx={{ ...appBarTitleStyle, display: { xs: 'flex', sm: 'none' }, maxWidth: '80%' }}> {appBarTitle} </Typography>
           <Button sx={{m: 0, p: 0}} onClick={() => navigate('/')} >
             <ImageIcon size={{xs: logoSize, sm: logoSize+10,  md: logoSize+25, lg: logoSize+50 }} src={logo}/>
 
           </Button>
 
-          <Typography sx={{ ...appBarTitleStyle, display: { xs: 'none', sm: 'flex' }, flexWrap: 'nowrap' }}> {appBarTitle} </Typography>
+          <Typography sx={{ ...appBarTitleStyle, display: { xs: 'none', sm: 'flex' }, flexWrap: 'nowrap', maxWidth: '80%' }}> {appBarTitle} </Typography>
 
           <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
             {navItems.map(item => (
