@@ -9,8 +9,8 @@ import ImageIcon from '../ImageIcon/ImageIcon';
 export default function ServiceDetails({ service, children}) {
 
   return (
-    <Grid component={Paper} container spacing={2} elevation={6} sx={{ margin: 4, padding: 3, backgroundColor: 'background.paper' }} >
-      <Grid xs={12}>
+    <Paper component={Grid} container elevation={3} sx={{padding: 3, margin: 3}}>
+      <Grid xs={12}   >
         <Typography 
           variant='h4' color="primary.main" display={'flex'} align='center' alignItems={'center'} justifyContent={'flex-start'} gutterBottom
           sx={{fontSize: {xs: 'h4.fontSize', sm: 'h3.fontSize', md: 'h2.fontSize', lg: 'h1.fontSize'}}}
@@ -42,6 +42,6 @@ export default function ServiceDetails({ service, children}) {
 
       </Grid>
       {children}
-    </Grid>
+    </Paper>
   );
 };

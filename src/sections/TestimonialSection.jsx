@@ -17,9 +17,7 @@ export default function TestimonialSection() {
       margin={10}
     >
       {testimonials.map((testimonial) => (
-        <Grid key={crypto.randomUUID()} xs={12} alignContent={'center'} justifyContent={'center'}>
-          <TestimonialCard testimonial={testimonial}  />
-        </Grid>
+          <TestimonialCard key={crypto.randomUUID()} testimonial={testimonial}  />
       ))}
 
     </Grid>

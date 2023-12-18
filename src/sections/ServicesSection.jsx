@@ -49,15 +49,17 @@ export default function ServicesSection() {
         }}
       >
         {servicesInfo.map((service, index) => (
-          <Grid key={crypto.randomUUID()} xs={10} sm={5} md={3} display={'flex'} justifyContent={'center'}>
-            <ServiceCard  index={index} service={service}  onClick={() => handleServiceClick(service)} />
+          <Grid  xs={10} sm={5} md={3} justifyContent={'center'}>
+            <ServiceCard  key={crypto.randomUUID()} service={service}  onClick={() => handleServiceClick(service)} />
           </Grid>
         ))}
 
+        <Grid ref={serviceDetailsRef} mb={5} justifyContent={'center'} >
+          <ServiceDetails service={activeService} />
+        </Grid>
+
       </Grid>
-      <Grid ref={serviceDetailsRef} display={'flex'} justifyContent={'center'} mb={5} xs={4}>
-        <ServiceDetails service={activeService} />
-      </Grid>
+
     </>
 
   );
