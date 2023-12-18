@@ -4,7 +4,8 @@ export const testimonials = [
   {
     name: 'John Doe',
     location: 'Grand Rapids, MI',
-    testimonial: ' I had a great experience with Laura. She was very professional and knowledgeable. I would recommend her to anyone looking for a enlightenment.'
+    testimonial: ' I had a great experience with Laura. She was very professional and knowledgeable. I would recommend her to anyone looking for a enlightenment.',
+    image: 'https://www.w3schools.com/howto/img_avatar.png'
   },{
     name: 'Jane Doe',
     location: 'Alaska',

@@ -13,16 +13,13 @@ export default function TestimonialSection() {
         component={'section'}
         container
         display={'flex'}
-        flexDirection={'column'}
-        alignItems={'center'}
         justifyContent={'center'}
         gap={10}
         marginY={10}
-        
       >
-        {testimonials.map((testimonial, index) => (
+        {testimonials.map((testimonial) => (
           <Grid key={crypto.randomUUID()} >
-            <TestimonialCard  index={index} testimonial={testimonial}  onClick={() => handleTestimonialClick(testimonial)} />
+            <TestimonialCard testimonial={testimonial}  />
           </Grid>
         ))}
 
