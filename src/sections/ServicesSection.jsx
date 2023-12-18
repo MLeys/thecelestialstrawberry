@@ -48,7 +48,7 @@ export default function ServicesSection() {
           backgroundPosition: 'center',
         }}
       >
-        {servicesInfo.map((service, index) => (
+        {servicesInfo.map((service) => (
           <Grid  xs={10} sm={5} md={3} justifyContent={'center'}>
             <ServiceCard  key={crypto.randomUUID()} service={service}  onClick={() => handleServiceClick(service)} />
           </Grid>
