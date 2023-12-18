@@ -7,24 +7,21 @@ import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
 
 export default function TestimonialSection() {
   return (
-    <>
-      <Grid
-        id='testimonials'
-        component={'section'}
-        container
-        display={'flex'}
-        justifyContent={'center'}
-        gap={10}
-        marginY={10}
-      >
-        {testimonials.map((testimonial) => (
-          <Grid key={crypto.randomUUID()} >
-            <TestimonialCard testimonial={testimonial}  />
-          </Grid>
-        ))}
+    <Grid
+      id='testimonials'
+      component={'section'}
+      container
+      display={'flex'}
+      justifyContent={'center'}
+      gap={10}
+      margin={10}
+    >
+      {testimonials.map((testimonial) => (
+        <Grid key={crypto.randomUUID()} xs={12} alignContent={'center'} justifyContent={'center'}>
+          <TestimonialCard testimonial={testimonial}  />
+        </Grid>
+      ))}
 
-      </Grid>
-      
-    </>
+    </Grid>
   )
 } 
