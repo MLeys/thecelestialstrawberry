@@ -6,7 +6,7 @@ import HeroSection from "../../sections/HeroSection";
 import IntroSection from "../../sections/IntroSection";
 import ServicesSection from '../../sections/ServicesSection';
 import AboutCard from '../../components/AboutCard/AboutCard';
-
+import TestimonialSection from '../../sections/TestimonialSection';
 
 function LandingPage() {
 
@@ -17,6 +17,7 @@ function LandingPage() {
       <IntroSection />
       <AboutCard />
       <ServicesSection />
+      <TestimonialSection />
     </Box>
   );
 }
