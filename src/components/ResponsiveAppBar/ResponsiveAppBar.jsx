@@ -83,7 +83,7 @@ function ResponsiveAppBar({ children }) {
   };
 
   return (
-    <Box  sx={{ mt: { xs: 7, sm: 8, md: 13 } }} >
+    <Box  sx={{ mt: { xs: 13, sm: 8, md: 13 } }} >
       <CssBaseline />
       <AppBar component="nav" sx={{ mb: 3 }}>
         <Toolbar sx={{ justifyContent: 'space-between' }}>
