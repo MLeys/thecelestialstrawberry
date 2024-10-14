@@ -17,7 +17,7 @@ function LandingPage() {
       <IntroSection />
       <AboutCard />
       <ServicesSection />
-      <TestimonialSection />
+      {/* <TestimonialSection /> */}
     </Box>
   );
 }
