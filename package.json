@@ -8,7 +8,7 @@
     "build": "NODE_ENV=production vite build",
     "preview": "vite preview",
     "client": "vite",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist --repo https://github.com/TheCelestialStrawberry/thecelestialstrawberry.git"
   },
   "dependencies": {
     "@cloudinary/react": "^1.11.2",
